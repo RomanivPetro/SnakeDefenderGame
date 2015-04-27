@@ -1,0 +1,2411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4ee37b72-9ec5-4c9e-b2a7-beb6f7475831" name="UMLClassDiagram" linkedPackageId="03cbbbc6-3396-4f01-8a88-4e5f431ca5f6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e41d8d9c-1d2f-4ca4-abea-85e95910a515">
+      <profileInstance Id="4a9e53af-3317-4231-963c-a9c2c7366232" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ff9944cb-d6c4-4f74-a3da-7c7f46334ca6">
+      <profileInstance Id="530ae352-bb80-4a27-95bc-7fdd833318a4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="308e66f7-f59d-40c0-ac62-5e19659fb8b9">
+      <profileInstance Id="84e4756a-a4a0-4156-8473-346f08527d20" name="CSharpProfile">
+        <elementDefinition Id="5e34750c-2e27-4688-8d75-a5d2c14ebaee" />
+      </profileInstance>
+      <elementDefinition Id="063465d0-6643-40d9-b781-8d3941cdb073" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7e1c9e43-37f8-4825-9894-7c32989b3cd0" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="6f7db840-b760-4d07-91c8-36b865534368" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame" tag="ViewCode">
+            <elementDefinition Id="a268b8c3-5df0-491d-8ebf-7a6412ea92e6" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2736c646-6ae9-45cc-9eaf-a34e38404f9c" name="class" profile="CSharpProfile">
+            <elementDefinition Id="246dbcbe-8884-4946-b1a1-41e8fd23be2d" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="c8fee20a-a8a9-4443-87fd-447814826ed1">
+                <propertyInstance Id="5ea558b2-fc9a-4ad2-a216-31fccfbe2b5f" name="ClrAttributes">
+                  <elementDefinition Id="00672cd0-9c9a-44d3-9114-bddc32691f84" />
+                </propertyInstance>
+                <elementDefinition Id="d2051a0c-21f9-4ec0-bd74-ab949a65e5ce" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d4e1f56c-6012-4a67-991e-b269e65327d8">
+                <propertyInstance Id="39e4544d-22c8-4856-9a66-aa5a4ad5f8a6" name="IsPartial" value="false">
+                  <elementDefinition Id="f5007907-3712-4b97-ad32-42740cf231cf" />
+                </propertyInstance>
+                <elementDefinition Id="ea12b8ae-08f6-4998-8940-92a8417f23ed" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="39c21888-d5ca-48d2-86ce-72f5e3ca62d0">
+                <propertyInstance Id="83eb7ac5-dfab-48a2-ac15-e09f022cbf6b" name="IsStatic" value="False">
+                  <elementDefinition Id="6ac36b30-62cd-4d5a-9661-5ddc0a038677" />
+                </propertyInstance>
+                <elementDefinition Id="d925c38f-cf73-498b-b64b-ce25b345d873" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0a7cfaba-f66f-4d77-aea9-45f2a1e1e4b5">
+                <propertyInstance Id="98a73f12-cda9-44ea-a469-aff9c1b67665" name="IsUnsafe" value="false">
+                  <elementDefinition Id="e1154b44-70b6-41cf-a3a9-fc4eb9e24fe2" />
+                </propertyInstance>
+                <elementDefinition Id="f1a505f8-2198-403e-8670-bff09bfa5869" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="30643fec-e2ba-4b66-8db9-08e09b11006a">
+                <propertyInstance Id="a02318f6-95bb-4ab2-88c7-d9a27b41525f" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="f805ab70-24d9-4555-99ce-638ad6b445c8" />
+                </propertyInstance>
+                <elementDefinition Id="7b82e4ad-b2f5-4175-98e2-d6e7cc9c3b84" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="9b2dab86-3634-4227-a46d-d5ea738a4075" />
+        <targetEnds>
+          <association Id="e12f2e96-1c94-49d4-bccc-67b2e04ab220" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Status" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="3e450d93-a8e9-4105-8f94-5d32cc73d71c" LastKnownName="GameStatus" />
+            <description>Property Status references type GameStatus.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fae3b53c-f7ea-4bc5-8296-bd6dee1ba81c" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="410d14b6-eccd-4427-a1fc-adba9181d582" name="Lower" value="1">
+                      <elementDefinition Id="89625509-af3c-47b8-9660-171fe12052fc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b096b9c7-150f-4dfe-82c0-8863c74316de" name="Upper" value="1">
+                      <elementDefinition Id="b11a2ded-642c-4f44-85ef-5acd68174b48" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="634fc7db-76d6-4c56-8274-e687153ae00d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fc7d99f-0d81-453e-b80a-958dec509ca6" name="Status" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="89af848a-42e1-4ef4-814e-b81557bdfb68" name="Lower" value="1">
+                      <elementDefinition Id="16a7b6f2-0c6b-4efa-b61c-f4744907e4e1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="20d11218-57d9-4a3c-95a3-7c203b87d55b" name="Upper" value="1">
+                      <elementDefinition Id="77cfb650-67c7-475e-9824-2af714b8429c" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="10d45d19-5840-4839-b52e-57a35374a53e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1be725bd-59aa-47a6-94d6-1cbf35f787cd" />
+          </association>
+          <association Id="3a8d4666-63d9-44bb-93ab-1f61ade6489c" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="MoveDirection" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="4c4dc619-d2d5-4dbd-9fa1-1d5d7d0852b4" LastKnownName="Direction" />
+            <description>Property MoveDirection references type Direction.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d935be2-5b75-4a0b-8164-768fb819224c" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4c1055f0-9787-41ad-823a-adb7ef964da4" name="Lower" value="1">
+                      <elementDefinition Id="d9d8380f-af53-4a6c-83d0-270b57efbb90" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c813320c-1091-4a4c-b75c-e0758a169fac" name="Upper" value="1">
+                      <elementDefinition Id="bc88cbc8-1177-40aa-a2bc-8f57516c88e7" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="37aaec11-7f22-4364-9944-815589f0fda4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fc3adec-83e8-409b-aad3-908ce0cfa3de" name="MoveDirection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c716f1a0-81a7-47d4-abc8-fb19aaac27dc" name="Lower" value="1">
+                      <elementDefinition Id="b955f4fe-9661-4a55-9de0-04f5fb6793f9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8722c85c-a585-4451-98e8-86245aed3dcf" name="Upper" value="1">
+                      <elementDefinition Id="cf80aa1e-ce5f-491d-8cef-59ea82d35d2d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2580621b-4aaf-4f22-a21d-17fc05c0d811" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cc23d938-1ade-4b76-9947-56f14b2783f1" />
+          </association>
+          <association Id="578cdc14-6d50-4ffc-bfb4-eefcc6aa4b1c" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Snake" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6b87e3d7-b226-4a84-b18e-10faee0aa499" LastKnownName="Snake" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72af0b59-70db-446c-bcca-74217bc0eb2e" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9d70de73-5e16-45fb-8b52-31bcbeede828" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cbe5658d-3be5-49c3-bf46-882d36827a42" name="Snake" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="a8e83cd7-a1f5-49ca-8b29-f34eaf22a139" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="69b87475-8344-42d2-9c1e-8123c146ced9" />
+          </association>
+          <association Id="65ae19ad-2d93-4b89-b94b-d5f9937f1098" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Point" isLeaf="false" isAbstract="false">
+            <classMoniker Id="32109441-831a-4f0d-9a9c-f347c285f248" LastKnownName="Point" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25c0aaa4-2909-4ebb-90a0-bfb384917553" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7f1ec291-2c97-4c67-9b6e-a2b451338596" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="133e1623-daee-45da-a5a4-73e3cd975158" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4be16279-cd27-42c1-a967-a4e314d7b477" name="Lower" value="*">
+                      <elementDefinition Id="eea7261e-b368-478d-92f9-771d05b8cd8a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="057dc3dd-7d57-4afc-ab70-4b8169cbd9b0" name="Upper" value="*">
+                      <elementDefinition Id="236a4d0e-846b-4d3c-9142-b89067ecd742" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e59de43e-5682-4cd0-a207-62e555c08870" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2f4cebd1-f8e2-4c5d-aca7-beae4d94ed23" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7cfe7917-55f8-41ba-8940-1a97f02b6d70" name="Head" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="1569594b-a70f-4cc1-a632-817af8bbe297" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DHead" tag="ViewCode">
+                <elementDefinition Id="e44455aa-2005-4fbf-a319-930ce65ee25b" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="512e3476-1b35-493c-8035-7d58ef2cd750" name="property" profile="CSharpProfile">
+                <elementDefinition Id="52011018-bfd3-4968-b330-e18f81bceccf" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4359606c-0fdb-4c5c-8b24-1a4b4afa13cf">
+                    <propertyInstance Id="5ecee408-6f9c-425f-9dc1-af1630a630df" name="ClrAttributes">
+                      <elementDefinition Id="893960f1-e033-432c-8447-8f5abc6455ad" />
+                    </propertyInstance>
+                    <elementDefinition Id="062d65e2-f681-4206-a7de-f906c3ddc244" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="58980217-0995-44ae-acd7-e8e74892f3bf">
+                    <propertyInstance Id="29c21bb0-71e9-4d23-a52c-7d71e5e4ce54" name="Get" value="public">
+                      <elementDefinition Id="a2971239-d0bc-4135-9108-895f40bdc188" />
+                    </propertyInstance>
+                    <elementDefinition Id="eb37ff44-a6b2-4ce3-90af-95906ad94a82" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="539d2bac-5888-45e7-817a-f6b8d73a15bf">
+                    <propertyInstance Id="30b6cf79-521f-46f0-af3a-5748f5d283c4" name="HasBody" value="false">
+                      <elementDefinition Id="686502a3-7583-4137-9792-4df2c90127e0" />
+                    </propertyInstance>
+                    <elementDefinition Id="8a67ed25-04f1-426a-89c6-a1cec0ad1db6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8b3e725e-d9a3-42a6-b95a-f7b5f826beb7">
+                    <propertyInstance Id="714161c1-057d-45fb-a667-f4be52eedac3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="81acace9-9abb-416c-9337-0967abb9bee8" />
+                    </propertyInstance>
+                    <elementDefinition Id="04804107-ddf3-49d7-9187-4632ce26edda" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="689748d6-4e9e-485d-b585-6a6088011396">
+                    <propertyInstance Id="678f8396-c7b4-4e10-adb4-7997dec559d2" name="Inheritance" value="none">
+                      <elementDefinition Id="d1202626-ae8a-4fc4-9cf3-a79929b28d6a" />
+                    </propertyInstance>
+                    <elementDefinition Id="63e81170-634a-45d3-b99c-ca881c118696" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="338480b4-f004-4c19-96dd-0ee991c58fa7">
+                    <propertyInstance Id="8a01feab-686f-4a2c-8018-7887853b7c17" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="0cb9a1d8-4764-4494-8385-06eb32df7af6" />
+                    </propertyInstance>
+                    <elementDefinition Id="32926ea9-fffc-47b3-aae6-b02823bc78dc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3f3e963a-f580-40be-88cb-c60051520d44">
+                    <propertyInstance Id="7e9ad3df-1c98-4ad3-a99c-162f99b675ba" name="Set" value="public">
+                      <elementDefinition Id="f8c9fa15-e250-43bc-b9c5-a683065e83c0" />
+                    </propertyInstance>
+                    <elementDefinition Id="240aebe8-f38f-4045-9a78-e5103042a0ca" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="153b093d-7ba8-4627-8755-8719ef3b8fb7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c679ddf1-71fa-48f9-bc46-a0df6cf5f734" LastKnownName="Point" />
+            </type_NamedElement>
+          </property>
+          <property Id="3ef27b9b-492a-46de-be4d-2a533ecee59b" name="Tail" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="22db95df-dc67-4129-bc67-3334551c5133" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DTail" tag="ViewCode">
+                <elementDefinition Id="7da99d95-6079-4745-b284-85ea447c49da" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="14077029-9fde-453e-8214-d9d56db47b4c" name="property" profile="CSharpProfile">
+                <elementDefinition Id="20351cf1-cbdb-49f8-8dad-ee860e536bc1" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ed75400d-49ea-4eb6-87fd-07172c5f18ec">
+                    <propertyInstance Id="ac7a801a-7016-4fd5-ac49-c690c142d362" name="ClrAttributes">
+                      <elementDefinition Id="168a455c-6ba0-4b5f-8d86-5f0502ecd558" />
+                    </propertyInstance>
+                    <elementDefinition Id="29580155-3871-4d64-a020-04c9463922ad" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9c44c55c-5e6d-4914-a0b5-6fde483bb768">
+                    <propertyInstance Id="8c3f2193-6e76-405e-85d1-7b084a64d7ee" name="Get" value="public">
+                      <elementDefinition Id="09993b7b-1701-427e-96ff-3151b17e9d9e" />
+                    </propertyInstance>
+                    <elementDefinition Id="dcd158c3-accf-4257-b15f-53bc23fd6180" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6a5efe59-ac50-4a7c-82bc-1b1c25416bba">
+                    <propertyInstance Id="2f73dac5-79d1-4660-b5a2-013f2e6fc7d0" name="HasBody" value="false">
+                      <elementDefinition Id="63e0ce22-1ccf-45f7-9276-bd910ad45ea4" />
+                    </propertyInstance>
+                    <elementDefinition Id="781a010e-00a6-4cd4-a173-2506dd48308b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2d1ac6af-16c7-4c7c-89b9-6f5d187345c8">
+                    <propertyInstance Id="005eba90-6b6d-4cbd-aa4a-e3935b472ca2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="ea2080d2-dd03-4478-b7ef-53ccb3d1091c" />
+                    </propertyInstance>
+                    <elementDefinition Id="9e4d29f7-3636-4f5d-bdae-9783963785ac" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c4c905f1-b0c8-465d-8126-93c615f21171">
+                    <propertyInstance Id="8e6ff953-99e3-4603-b4a0-d3836a2663e4" name="Inheritance" value="none">
+                      <elementDefinition Id="8ac00af0-df49-4484-b034-857ee9979807" />
+                    </propertyInstance>
+                    <elementDefinition Id="3b530c12-b139-494c-a69f-78db68d2c4ff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a169438b-627b-490b-b783-36191a4fbfff">
+                    <propertyInstance Id="f44edfac-59c6-41a3-9ae8-351d9472b759" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9a8eb902-de38-401e-b921-3c7246e98046" />
+                    </propertyInstance>
+                    <elementDefinition Id="40adb2bc-59dd-4d80-ac98-6fca83a2c93c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6a02b7cb-6829-474a-a5da-6b589bd933de">
+                    <propertyInstance Id="8593fced-d476-4f4a-96b2-c6342c2cd2fd" name="Set" value="public">
+                      <elementDefinition Id="3ac1d3d4-5906-45e9-9ec3-569d7d965413" />
+                    </propertyInstance>
+                    <elementDefinition Id="fa6438bc-1015-49b8-b411-049c47e59b34" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="de8b66f7-b3d8-4ac9-80fa-6a52abda5641" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c679ddf1-71fa-48f9-bc46-a0df6cf5f734" LastKnownName="Point" />
+            </type_NamedElement>
+          </property>
+          <property Id="1a0138f5-d2c6-4b63-abf9-bf71f4119cb0" name="Food" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="13104d35-4acd-488f-9301-0a7159d305d2" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DFood" tag="ViewCode">
+                <elementDefinition Id="dff7b789-401e-4f02-8288-5f9781b583d9" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="18c83695-fcc1-422a-b8ce-d3dff8dbc5ba" name="property" profile="CSharpProfile">
+                <elementDefinition Id="63e595c4-f9d3-4a96-826d-d90ca792ea8d" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e96d2c63-c530-4e9b-84cb-c5b5b816133e">
+                    <propertyInstance Id="d54f172c-12a7-4d92-a896-9a8b7d3fe6cb" name="ClrAttributes">
+                      <elementDefinition Id="2a2e310d-642f-466b-92e1-9ce5b909ebd9" />
+                    </propertyInstance>
+                    <elementDefinition Id="3fdc216d-14e3-4884-8e79-5510866da5e8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="53c1a050-1f55-41c1-b638-169ae894019e">
+                    <propertyInstance Id="1492ed7c-b9b2-4a74-923c-7d8c315cfcdb" name="Get" value="public">
+                      <elementDefinition Id="f8c134e7-6d70-45d5-8643-91d01af74317" />
+                    </propertyInstance>
+                    <elementDefinition Id="b4bdcab2-aee5-47c7-97d8-bfc18bcb6025" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e873a59c-e656-4153-a851-486787bbf6c8">
+                    <propertyInstance Id="cfc9f1af-cf93-470e-8014-cd7ac56ea0b3" name="HasBody" value="false">
+                      <elementDefinition Id="dedbff73-0db5-4b4b-979a-fc4c82961d9d" />
+                    </propertyInstance>
+                    <elementDefinition Id="17f3937b-e8c4-4b40-a637-42c8ffaa415a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="246805e7-fc24-4b52-91a1-ba3a9473552e">
+                    <propertyInstance Id="4bb91057-f372-419a-9a9b-0e9f724cc941" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c4aaea03-9ead-479b-89d4-8dbfd2e7ba3b" />
+                    </propertyInstance>
+                    <elementDefinition Id="9ad456f2-98b4-4eeb-82a4-7e8de0596c06" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="829d0128-2311-4a77-bc64-ccc49f3063a7">
+                    <propertyInstance Id="35d9b060-049b-48aa-bd43-318787aee72c" name="Inheritance" value="none">
+                      <elementDefinition Id="36f4be75-e8fd-4cdd-831c-a4875f26959d" />
+                    </propertyInstance>
+                    <elementDefinition Id="e40ad338-24eb-4bf3-8864-7d19e6b996c6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a7cf40c9-46e9-4fc6-a81c-595dae786844">
+                    <propertyInstance Id="32c0fc12-6fd3-4207-b6fc-3cd3eee02bc1" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b204df8b-9c1f-49e7-b49c-ebb40ae7bb0e" />
+                    </propertyInstance>
+                    <elementDefinition Id="f919be58-b51b-4801-9271-59223098d6aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="da8cd26c-8550-4991-a6c2-52d1d53770b2">
+                    <propertyInstance Id="f688fb24-204e-4ee0-bb2b-cdd2d08d0b34" name="Set" value="public">
+                      <elementDefinition Id="4362f1b4-27e1-43f2-8214-521196a7f937" />
+                    </propertyInstance>
+                    <elementDefinition Id="617ca70b-f811-46a8-99b2-c71c9853c993" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="09a9aaee-b1cb-468d-9a5a-31d0f6472c6f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c679ddf1-71fa-48f9-bc46-a0df6cf5f734" LastKnownName="Point" />
+            </type_NamedElement>
+          </property>
+          <property Id="5407219f-dd66-48fe-9247-02b6c292daa4" name="Speed" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="a5ecfb9c-94ca-4b77-9504-b060b845eec1" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DSpeed" tag="ViewCode">
+                <elementDefinition Id="0f158fbf-c147-4ccb-a7a2-e086db9b81b9" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="0430e1d8-f44e-4a2e-95db-2b8a0af0e51f" name="property" profile="CSharpProfile">
+                <elementDefinition Id="37d7f1bd-957a-486a-bc6d-ee23f5b47bc5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a62c41c1-864b-4e7d-9c5e-154caec07fd4">
+                    <propertyInstance Id="2f1711e6-98b9-4794-a40d-b6030dc7388f" name="ClrAttributes">
+                      <elementDefinition Id="842c24d7-bb6d-47a5-83d4-2170caeac0aa" />
+                    </propertyInstance>
+                    <elementDefinition Id="f2690674-0067-4639-97f7-e1fbd9dbc94d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="aa64971d-e843-469b-bc85-7618f5405781">
+                    <propertyInstance Id="b5b34bdd-e7da-4b5e-89c0-efc51aa6f8ce" name="Get" value="public">
+                      <elementDefinition Id="da8741eb-31a9-4b39-986d-5eb808fa56ae" />
+                    </propertyInstance>
+                    <elementDefinition Id="e6c6a0c8-1c7c-41eb-8a20-17fb9045e87d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="70a14fdd-3bce-491e-bdc9-1e5a86b7ecd5">
+                    <propertyInstance Id="43ee027a-a054-40ed-987e-70198ef436f6" name="HasBody" value="false">
+                      <elementDefinition Id="f43faae5-b32e-4871-9a39-b93b5fa3ad38" />
+                    </propertyInstance>
+                    <elementDefinition Id="50765a94-f93b-49d4-8455-9655ff500274" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="38a4583c-d2b3-46d8-9231-be61ee2954b2">
+                    <propertyInstance Id="8f742ff8-254b-4ff1-af9f-020ec5611bc4" name="IsUnsafe" value="false">
+                      <elementDefinition Id="4d2c1c32-f1cb-4aec-80d7-4540a4df0da8" />
+                    </propertyInstance>
+                    <elementDefinition Id="799c3b60-1e36-4bcc-8e60-6f79ed5d4895" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e1354df2-8f71-415c-9e39-9ec96b348450">
+                    <propertyInstance Id="96d57771-0c3d-4ebc-b900-d19745ff6b09" name="Inheritance" value="none">
+                      <elementDefinition Id="91832674-6c1a-4d46-b6cc-6b873d01f547" />
+                    </propertyInstance>
+                    <elementDefinition Id="728063d0-af09-4c65-9b1d-682faa9a2067" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2e9963d8-4156-44dd-b0a6-1e9f88826506">
+                    <propertyInstance Id="ac81ee99-1849-4a12-a81a-6b8a0e39756e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b59bbe74-d3bb-4bcf-bb97-1441a3d147ac" />
+                    </propertyInstance>
+                    <elementDefinition Id="b582e78e-d1f2-422d-981f-a8a862262560" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="aef61106-d273-49fb-84c1-905cceb6192a">
+                    <propertyInstance Id="7d33173c-f71a-4846-8f4d-ee8402c92b88" name="Set" value="none">
+                      <elementDefinition Id="d04e8b8a-b17a-4db6-90b1-302906763687" />
+                    </propertyInstance>
+                    <elementDefinition Id="c86806df-ab8f-450f-9361-51e104018387" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="219f5684-0eee-48ba-bbd3-a41bf6a68d70" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="1c2c1ee5-b103-401f-b1da-5e888caa1654" name="Score" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f1e17efc-04a4-45bc-8edc-855d60483ddf" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DScore" tag="ViewCode">
+                <elementDefinition Id="9bcd0711-cfbb-4141-8523-725ba6916121" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8a7d435d-eef3-4162-b774-bf7fa9400512" name="property" profile="CSharpProfile">
+                <elementDefinition Id="decff1e4-feac-4a79-8db7-1a16bed78967" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b58045a7-3c3b-4332-a1e8-2796126c6ac8">
+                    <propertyInstance Id="8d221abd-364c-4fc3-8e98-30fa7967c9d4" name="ClrAttributes">
+                      <elementDefinition Id="d1af9317-5e82-41bf-ac40-2209eb72b535" />
+                    </propertyInstance>
+                    <elementDefinition Id="f2f2772e-3fd3-4c36-ba61-e6c81c384531" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a0bd3565-3579-4a3a-aa65-4bddd1595e78">
+                    <propertyInstance Id="5cda340c-7a01-4dc6-830e-c2b79b77a148" name="Get" value="public">
+                      <elementDefinition Id="b26ce51f-f057-4f1e-8300-c3a0a1d2fc23" />
+                    </propertyInstance>
+                    <elementDefinition Id="1618f172-5fb8-4957-9afa-895028688407" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be45c3f2-6e92-4b2f-aab3-88aa0e408227">
+                    <propertyInstance Id="cd0d1529-ff79-4bc5-97ff-361a7205a608" name="HasBody" value="false">
+                      <elementDefinition Id="eaa8e155-546f-403c-b069-45719d7cf01e" />
+                    </propertyInstance>
+                    <elementDefinition Id="c1ae462a-8ac9-4670-b199-e545e7cfe192" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bcb4cfca-3196-4227-9350-dd61c0ef50b0">
+                    <propertyInstance Id="c252cb62-b29f-4830-9fd8-4e8ef58f95c0" name="IsUnsafe" value="false">
+                      <elementDefinition Id="354b684f-dc7e-4382-b067-7dd11fbecd1d" />
+                    </propertyInstance>
+                    <elementDefinition Id="d089aa48-fc3b-454b-ae7e-f7e043fb8f50" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d5cfad79-aea0-4acf-845c-b278a72c1d67">
+                    <propertyInstance Id="db3be161-4b99-45cf-bd38-7ba1d9ba5a2e" name="Inheritance" value="none">
+                      <elementDefinition Id="1fcaa120-a3e2-4ec8-be85-37b90363c5ed" />
+                    </propertyInstance>
+                    <elementDefinition Id="aa84a18c-1df0-4c10-9342-199de7b09684" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ae3a312a-c28d-42e1-af5d-ee58a1c1d172">
+                    <propertyInstance Id="a9108e07-edda-49b8-ba2f-c2fa55806643" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d4871014-4b8e-46cc-9192-e12f4fcb83ce" />
+                    </propertyInstance>
+                    <elementDefinition Id="290c4bfd-ed9a-4745-92f1-67be83b8d74b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="76975c30-f63a-4b54-8c99-3880bd22ad1e">
+                    <propertyInstance Id="c8f2879b-10e4-42c2-beba-afd7239508e6" name="Set" value="none">
+                      <elementDefinition Id="2b216380-ce14-426f-a09a-9cae93c8088a" />
+                    </propertyInstance>
+                    <elementDefinition Id="47fd8807-601b-42de-acd8-5ba5fbf8f397" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e5978d6e-0f62-4b5b-84ec-ff37042612b0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="809b567f-3dca-4799-a057-f5f236536b4b" LastKnownName="Double" />
+            </type_NamedElement>
+          </property>
+          <property Id="d01380db-371a-4807-8037-b1ff7d3073be" name="Status" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="1556cfee-142e-4b35-93eb-b1cf4b0758e7" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DStatus" tag="ViewCode">
+                <elementDefinition Id="8ba337ee-3bc2-45f2-915f-10df57a2ed7f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9be02c0f-ad97-4cf9-82b0-c7dbd85dbb29" name="property" profile="CSharpProfile">
+                <elementDefinition Id="26e21913-39b8-491e-a877-9af519f5b16b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e3f16aa6-65aa-4a9a-997b-24375f469843">
+                    <propertyInstance Id="33d7416c-1b22-4e69-a67b-1d361d159a01" name="ClrAttributes">
+                      <elementDefinition Id="2f38c8a4-b67d-4ae9-98a2-f21257abc44e" />
+                    </propertyInstance>
+                    <elementDefinition Id="23dd4bdb-cfa1-4048-bdb2-9c732dc7a550" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b832e1c9-adac-4028-85b7-05eea3d14f41">
+                    <propertyInstance Id="bdf6b8ca-556b-4001-967f-ceb319ac9d4c" name="Get" value="public">
+                      <elementDefinition Id="0df8c54a-4bdc-4084-8c89-62416d30efe2" />
+                    </propertyInstance>
+                    <elementDefinition Id="ced85d5e-e42e-4769-b71b-4ea4c531cbc2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4a5dd5c9-d8c1-4a47-be7a-0dad58ab7062">
+                    <propertyInstance Id="580cb011-4363-426c-afd3-b173397e9958" name="HasBody" value="false">
+                      <elementDefinition Id="139e00f3-8b19-46e2-b9ae-d969f6b79d91" />
+                    </propertyInstance>
+                    <elementDefinition Id="f865c052-7f7c-4a5c-b010-6c4dc8155d92" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5558e89c-d080-4cc6-9a2a-1ae66023c66d">
+                    <propertyInstance Id="96000196-174e-4372-887a-9c520c350269" name="IsUnsafe" value="false">
+                      <elementDefinition Id="8a429583-def9-47a4-bbc9-2f1e786bce5f" />
+                    </propertyInstance>
+                    <elementDefinition Id="4b2489f0-3fb8-474c-b49d-1934ea8f4451" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3a197a27-bd58-4a19-8309-f33ee6ce3f70">
+                    <propertyInstance Id="809bc060-ca58-4ab0-862d-5b2f122c334e" name="Inheritance" value="none">
+                      <elementDefinition Id="c9a4cd10-90d3-42cd-99cb-90d4bd22fd27" />
+                    </propertyInstance>
+                    <elementDefinition Id="b5f5560e-eb8e-4583-8052-d3c0d690a9c5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eaab80e7-1d0f-4948-ae89-1b4b3ca9a166">
+                    <propertyInstance Id="8b6c8da7-3402-4b1b-9e50-99572103f8e8" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="5e81a589-78fb-4239-9a43-c55bb3c217e8" />
+                    </propertyInstance>
+                    <elementDefinition Id="371fd2b0-03d0-4a0d-98b4-04e482c4dd69" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e84acb1c-c0b7-4299-820e-e11acab92001">
+                    <propertyInstance Id="59ca5d79-d224-4426-8780-a10bd0c9ca94" name="Set" value="public">
+                      <elementDefinition Id="e1cde013-653f-49fb-a5a5-eb511d8cb42c" />
+                    </propertyInstance>
+                    <elementDefinition Id="e544bc14-7b67-44ce-97d7-b2203f77c1d2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ad8b4656-2174-4564-a92c-9ffb415d2ff2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="024d5536-c016-4bb3-8f36-0e08b2449596" LastKnownName="GameStatus" />
+            </type_NamedElement>
+          </property>
+          <property Id="2ca89e44-ee54-4acb-9831-26cec42bb648" name="MoveDirection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="cf3abf9e-a7ca-425d-a660-bc57832924fd" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DMoveDirection" tag="ViewCode">
+                <elementDefinition Id="0cd90a0b-01a5-4d8f-a211-a8f794cb5556" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="d14e14f4-c72d-4d1f-a7a4-2b1acbfb7ccc" name="property" profile="CSharpProfile">
+                <elementDefinition Id="f7133540-23c5-40dc-a822-6183b6ced335" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="60758d7e-4e59-48c8-ab0b-cb519e2de1e8">
+                    <propertyInstance Id="408c3634-c4c7-4751-8a77-773bad2d1b0b" name="ClrAttributes">
+                      <elementDefinition Id="ca648dcd-8e15-4abb-9b13-94fe6b92b8ed" />
+                    </propertyInstance>
+                    <elementDefinition Id="d3d1d334-df39-4eb2-80f2-e0b57ca196c4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b4ed5a36-90e4-4365-be2f-5e687ba2bfb4">
+                    <propertyInstance Id="6140d623-8870-439e-9411-3e56367491e5" name="Get" value="public">
+                      <elementDefinition Id="49e3889a-352a-4e9a-b02a-6ecb1f9f68fe" />
+                    </propertyInstance>
+                    <elementDefinition Id="ecccdbf1-87ea-4a08-ac39-08e0a5f5b983" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6c881af3-afe3-469e-b78a-d742bc96d0f7">
+                    <propertyInstance Id="fae9fa46-563a-462a-9d77-968003fb5138" name="HasBody" value="false">
+                      <elementDefinition Id="8663bb5b-c489-4fa7-8ee8-97d6e739691b" />
+                    </propertyInstance>
+                    <elementDefinition Id="0501d259-1b6c-4846-a87a-845f2c931907" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="72829e1d-09cb-4a61-b34d-be5bafe4f204">
+                    <propertyInstance Id="68d9c12c-2051-4667-9b6e-3020b817301a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="59f88e81-a26a-48e3-bf0b-1cb89d1ae2fc" />
+                    </propertyInstance>
+                    <elementDefinition Id="20c54762-dda3-4560-ab57-53069929cd1e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0b965f55-f247-4b9a-81f8-31fc32d04b72">
+                    <propertyInstance Id="16ab4814-a6f0-4223-bf8f-0dc875dc07c6" name="Inheritance" value="none">
+                      <elementDefinition Id="6d6e7137-3a50-46f1-a3ef-64aa620357f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="e11af452-7573-4daf-865f-d7f9f6614319" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="19fa7257-563d-4c43-8bc0-cf004c79f63b">
+                    <propertyInstance Id="e026724c-3646-43fb-a3e4-e827fd6b575d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d815d562-7f6c-49f8-8ffc-ff1299153124" />
+                    </propertyInstance>
+                    <elementDefinition Id="79d88d00-8836-415c-a376-c0c343b4d330" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c4878dee-4929-4b90-a8a7-578ede4464d9">
+                    <propertyInstance Id="721f64b6-c4f4-4f26-80f0-302efe8ad3a5" name="Set" value="public">
+                      <elementDefinition Id="36584f2b-1db8-40a5-95bf-7274fa7f4573" />
+                    </propertyInstance>
+                    <elementDefinition Id="88797775-3f67-4249-bb09-48755a758c86" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="26a1f24a-ffd7-4fff-9de2-6b6aa0f9255f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="075290a3-15d8-4550-aabd-a610ef891fff" LastKnownName="Direction" />
+            </type_NamedElement>
+          </property>
+          <property Id="e9c2348e-19e7-4dce-9b94-3f226876856f" name="_count" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5ca46b74-a3d3-4cc6-a6f9-7a5bc5a86958" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D_count" tag="ViewCode">
+                <elementDefinition Id="1e87c138-87eb-4382-a081-6611549524b3" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b1635068-36d1-49d2-adea-f34e0bd49b8f" name="field" profile="CSharpProfile">
+                <elementDefinition Id="6aeb9cf4-d406-4cba-a64f-28ac94a584da" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="84748c68-b674-4760-87fe-2ac8203923e4">
+                    <propertyInstance Id="045270d9-d635-45a2-8aa1-e3aa69217c3c" name="ClrAttributes">
+                      <elementDefinition Id="6eb806c1-f666-48b1-98dd-c0edbebbddc3" />
+                    </propertyInstance>
+                    <elementDefinition Id="fcdc5141-8bdb-4eaf-a75b-cbcd96ca5d09" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="34211608-dcfd-43e9-bdbc-7d7ad993c21c">
+                    <propertyInstance Id="24bcc314-d569-45e4-8fde-8559328863ea" name="IsConst" value="false">
+                      <elementDefinition Id="2b11c40d-41e4-43bb-aba9-1ba7b2893b02" />
+                    </propertyInstance>
+                    <elementDefinition Id="6c63e979-71b5-4842-a4b5-ee329053ccaa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ac259cc1-9867-4f0e-a059-483ed04719b1">
+                    <propertyInstance Id="584f5244-973f-4412-9479-ebc8d934fa53" name="IsNullable" value="false">
+                      <elementDefinition Id="12f93917-f0ff-49f8-915a-2f886ff5ff93" />
+                    </propertyInstance>
+                    <elementDefinition Id="de4c347c-5285-49fe-8413-5b1b49d17c34" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2509a0e6-1788-428e-9010-f4d38c95f694">
+                    <propertyInstance Id="29856a8d-4797-4ca5-9580-d1bbfebe199e" name="IsVolatile" value="false">
+                      <elementDefinition Id="29b4aa6a-1af5-4a15-b360-39ca2009260e" />
+                    </propertyInstance>
+                    <elementDefinition Id="be3f93a3-0494-4f93-8a73-3f040355d3ca" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6125110b-65db-4590-a590-0424b00e4f04">
+                    <propertyInstance Id="44cd2ffc-dc61-4d2b-89c2-b3bd36256980" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="807d8099-8386-4ac2-9a9d-4fa442aa5ce8" />
+                    </propertyInstance>
+                    <elementDefinition Id="5a844e0e-fb00-4419-966c-7b42fe8be9a7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="d719f14c-40c1-4dd9-8909-b63e39299f94" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="bdbbe678-386c-4588-8cc3-49cdf4d7ad19" name="_emptyField" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="99934ac9-eed9-4cfc-8074-6e81b7233ac1" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D_emptyField" tag="ViewCode">
+                <elementDefinition Id="c6ebe971-de64-43fe-b1b5-e2b3e6c9ae9a" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ab946ca1-00b4-4e89-bef6-8705a741d7fc" name="field" profile="CSharpProfile">
+                <elementDefinition Id="9b9d8028-f08b-42c9-9859-87e309f2d627" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="30a5bfde-9358-424f-896a-1e5193506d88">
+                    <propertyInstance Id="cb75d7be-11f2-4b9e-890f-052c2cfae6d2" name="ClrAttributes">
+                      <elementDefinition Id="72e81d3d-b3a3-42fc-954a-46c2b268cdf2" />
+                    </propertyInstance>
+                    <elementDefinition Id="6a1c4f31-e65e-4431-8b9e-053d42fa2e48" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="39cb907a-3304-414d-9084-73c554c664be">
+                    <propertyInstance Id="c80549a2-fc77-4744-8eee-71c74dea394f" name="IsConst" value="false">
+                      <elementDefinition Id="971a527d-a5ba-4ada-823b-6f935a463151" />
+                    </propertyInstance>
+                    <elementDefinition Id="8642cfea-c616-4351-9fdb-a886b6733fea" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a01cea74-11d1-42bd-8866-d093b1ded0b4">
+                    <propertyInstance Id="b084a29f-44f7-4307-bb54-0975d0bc7a8f" name="IsNullable" value="false">
+                      <elementDefinition Id="e77f8fc5-a04e-4a3f-8a76-cba5e59a7db4" />
+                    </propertyInstance>
+                    <elementDefinition Id="272a6aae-0478-4eda-935e-2cea8d32998e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ceb5cb79-cbe4-468e-8a1b-c90e2f52378f">
+                    <propertyInstance Id="51f909ea-75d0-4d13-93f1-9f392e33535d" name="IsVolatile" value="false">
+                      <elementDefinition Id="52c77aee-3504-41c5-82ca-69217bad40e1" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c4b303c-6fb8-4411-a23d-a83a05a60ec3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9422d5a6-88ce-4be6-ab91-de74a9727c41">
+                    <propertyInstance Id="6103aff8-fbfa-4767-b06f-78e0bcd12a3e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="17e11735-1b0b-434d-81e0-32d335438218" />
+                    </propertyInstance>
+                    <elementDefinition Id="e3907701-0204-40a9-be65-7ac6e2d9fd6f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c751b0a3-36f9-4955-be59-7d4d88430d2a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="808c8f5b-468e-4918-b850-1d9ccab9d2e1" LastKnownName="List&lt;Point‎&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="2392809f-d664-45d7-b359-08f7ac7df42a" name="_playerSnake" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="ac44fe30-1cae-4664-acd4-9f2332a63d6f" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D_playerSnake" tag="ViewCode">
+                <elementDefinition Id="26ebec40-55d0-485d-9b41-995e8b8443d6" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="fb485cff-ec1b-4d56-a98f-6e7f33bba088" name="field" profile="CSharpProfile">
+                <elementDefinition Id="0999e183-8cbf-48dd-b0af-2aa3f68d5d9e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="700a46a7-bd85-4b5a-945c-4a1b51196b02">
+                    <propertyInstance Id="03648097-ff1c-49bc-bf47-897ac7cdf4fe" name="ClrAttributes">
+                      <elementDefinition Id="84ac4c38-1a20-41df-97bd-39b8162a6ada" />
+                    </propertyInstance>
+                    <elementDefinition Id="56d7312d-ee81-4fc9-8e02-10f2f05345d0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="60a18bff-e6f8-4e08-a185-4eb90cc6e2df">
+                    <propertyInstance Id="de6a2a41-9625-48d2-9008-bf8fa864f7ca" name="IsConst" value="false">
+                      <elementDefinition Id="bdf12494-8f94-474f-974b-ad2a87408622" />
+                    </propertyInstance>
+                    <elementDefinition Id="49d2a3be-a243-4d47-9aeb-ab0d821ab1ae" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bfa668a5-0d1f-4b0c-b32e-191e16e2f712">
+                    <propertyInstance Id="e8c436e8-6257-45a9-a70e-116b8dd1f1d8" name="IsNullable" value="false">
+                      <elementDefinition Id="ae0114f7-f8ee-4425-a321-4d3114cddd32" />
+                    </propertyInstance>
+                    <elementDefinition Id="fd082892-17c9-4d22-9cf9-cd7f2f7c8d73" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a5c35b82-5719-44f1-aac4-0f5c84dccb80">
+                    <propertyInstance Id="dfc71b5f-3918-48f9-bbad-5e5beabf67ba" name="IsVolatile" value="false">
+                      <elementDefinition Id="837107b1-c294-4d3c-b4d6-9fff2cac3c83" />
+                    </propertyInstance>
+                    <elementDefinition Id="4dbeebcd-6f05-4f5e-99d9-6354c6a037f0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e1c2a248-cd32-4348-8748-070ce7c82538">
+                    <propertyInstance Id="940ce8bd-443e-4264-ac61-18091bef59a4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ba394270-0c64-475a-bdcc-8f83b1cb8234" />
+                    </propertyInstance>
+                    <elementDefinition Id="fb4ac8ad-59e0-46a7-aacc-c6c34398b7c7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="9a720246-1b58-4c17-a27e-ec5542eca3c1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d08e530b-cf58-4417-b5a3-9737a419bb4a" LastKnownName="Snake" />
+            </type_NamedElement>
+          </property>
+          <property Id="445aba0d-ace3-40b0-b9ee-4f2b5ffed800" name="_gameSettings" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="4ef32956-efc2-4b74-9551-bec7b063b186" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D_gameSettings" tag="ViewCode">
+                <elementDefinition Id="20052400-410d-4702-afc0-cda62a497a7f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3ffb2b5f-0556-49f8-8003-2302ca1d2cbe" name="field" profile="CSharpProfile">
+                <elementDefinition Id="111efd36-804e-4d0f-9f7e-bada0b43a8a7" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8e8b7546-7a5f-4ca2-8404-968b869cb2e4">
+                    <propertyInstance Id="281c4756-5729-4e2c-87c9-dd0d79ff2911" name="ClrAttributes">
+                      <elementDefinition Id="8190f32a-30aa-4494-b746-73791d11b25f" />
+                    </propertyInstance>
+                    <elementDefinition Id="625473ab-c1cd-4d15-9e59-13d07c9c8b98" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="74edfa45-7212-4b33-819d-21b607d391b4">
+                    <propertyInstance Id="c4dee2fe-ee49-4d19-979b-7259c6fbb8f8" name="IsConst" value="false">
+                      <elementDefinition Id="ae806d00-c63e-4926-bfa6-f53fdb6f32da" />
+                    </propertyInstance>
+                    <elementDefinition Id="24365015-f045-4e29-8890-c1877593075a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9891d298-d4a2-4fea-a11d-a974a15612c8">
+                    <propertyInstance Id="98d66cb7-d0e2-4b87-bd89-dc54eaf2fbc8" name="IsNullable" value="false">
+                      <elementDefinition Id="02bc0684-8d47-477a-981a-753819c8ae8a" />
+                    </propertyInstance>
+                    <elementDefinition Id="28bd91bb-9c23-41c7-98fc-3394d98301ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5be509fd-fec1-4f96-addf-3544e59710bd">
+                    <propertyInstance Id="7793f537-595a-40c7-97c7-e50382ecca71" name="IsVolatile" value="false">
+                      <elementDefinition Id="bd42ede9-9e27-48c5-b31c-382f5afad260" />
+                    </propertyInstance>
+                    <elementDefinition Id="6cd2f16c-9e35-48c1-814c-77e33162e1f7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="95cbbbe5-3ea9-42f9-b552-a5defc9dab23">
+                    <propertyInstance Id="caf4fcee-05ef-4fcc-a5d5-805156fa6dba" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9476e05c-1ab8-44cc-b5c8-653bb1484b67" />
+                    </propertyInstance>
+                    <elementDefinition Id="a7ea61bd-92fd-40d4-8ea8-c9c6fe369f45" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="be0c712d-0045-4a6e-940f-3f24a0986343" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8aaf2f7f-49fe-41b5-8756-57504474c50c" LastKnownName="IGameSettings" />
+            </type_NamedElement>
+          </property>
+          <property Id="599e246f-9943-4b36-a24c-84313dafc047" name="_randomGenerator" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="629068bb-439a-463c-b1f4-c6edca7bc0d9" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D_randomGenerator" tag="ViewCode">
+                <elementDefinition Id="e7731ea5-5b76-4c3a-8d82-961fbcf41d2f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5b2096e1-8d50-46de-929a-0b943aea4580" name="field" profile="CSharpProfile">
+                <elementDefinition Id="8b29ac2e-f0eb-4f3e-9989-894d6e2942f9" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="02f3f5e3-c6aa-4a77-9d21-0e9e29eeb3d4">
+                    <propertyInstance Id="2a4081c6-ee28-40f9-bf9f-320a6717cd53" name="ClrAttributes">
+                      <elementDefinition Id="3d04100e-2016-4635-a722-1eca637bb4df" />
+                    </propertyInstance>
+                    <elementDefinition Id="242c6d05-f9fe-4d2d-830c-30e57ee2e76e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a47aeedb-7fb6-4129-8c87-096d206062a4">
+                    <propertyInstance Id="f4067bc0-059e-4a5e-92d7-84ddb8cd294a" name="IsConst" value="false">
+                      <elementDefinition Id="bc7a0078-0bc9-4dd0-9b0a-eaa81c66b53f" />
+                    </propertyInstance>
+                    <elementDefinition Id="7b17d444-8bbf-41a4-8995-28e7a80a3f4e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8cf110ba-2141-4c07-adbb-fc22bb3a1132">
+                    <propertyInstance Id="15055e01-ffa3-4489-b5fb-e903157fd84f" name="IsNullable" value="false">
+                      <elementDefinition Id="23a82d06-1bb4-4851-a16e-ff446909770c" />
+                    </propertyInstance>
+                    <elementDefinition Id="b4b259c4-2ddd-4c3b-842c-bc153779765f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="80a7f518-157e-4182-be82-fcf744ccf610">
+                    <propertyInstance Id="8f500a29-3cc1-470b-ad0a-e86e0c1b4b68" name="IsVolatile" value="false">
+                      <elementDefinition Id="0beb0034-91b8-48f4-a30c-d3f1eea4a8ee" />
+                    </propertyInstance>
+                    <elementDefinition Id="7cfc53ca-8300-4f80-adca-592ed0b3f6ef" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a389e10b-6f20-49db-aa32-e145d8bcd67c">
+                    <propertyInstance Id="050acedb-a293-4f8e-8a82-85a142e9c094" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e5937916-b9ef-436b-8ee4-c9a1aa4bd0c2" />
+                    </propertyInstance>
+                    <elementDefinition Id="d207c92c-5d1b-4c01-9841-861c7797edd9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="bd3a059b-ae4e-4b2f-a825-463bdb8ebb5e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="df226848-b9e3-4d28-ba98-bfb6888179d3" LastKnownName="IRandomGenerator" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0a9a5257-5f0f-4232-9093-5183c3f1f9a9" name="Game" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="9b5c8c78-7b50-4d51-84b4-9ac1b729495e" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIRandomGenerator)])" tag="ViewCode">
+                <elementDefinition Id="a1842da0-d329-41f8-a952-12155047d223" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="be828d36-45dc-4f67-9ef4-2af579829e93" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c76130aa-51f6-45ba-b89c-69d6691efeaa" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1e26959e-1e36-4f21-ae48-ef2aacb307db">
+                    <propertyInstance Id="caaf4c18-6a71-46bf-b899-7d34d5176c58" name="ClrAttributes">
+                      <elementDefinition Id="676b5ad8-9645-4607-8b7b-85a9b44e14da" />
+                    </propertyInstance>
+                    <elementDefinition Id="874c01da-d840-4a3d-83a8-377d0f5276d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7b96b613-de65-48fc-9864-a8f087603b82">
+                    <propertyInstance Id="26d9e92c-98ab-4ebe-8c32-7832d740f45c" name="IsPartial" value="false">
+                      <elementDefinition Id="40c5a906-320c-43bb-a9f3-fded39cebf02" />
+                    </propertyInstance>
+                    <elementDefinition Id="3b655c8d-8fda-4a46-be8c-2ecf21b26cdb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b42bde67-46d5-4b82-bb11-5b04683240d8">
+                    <propertyInstance Id="97e65673-12d9-43f3-8f2a-211056301163" name="IsUnsafe" value="false">
+                      <elementDefinition Id="cf9240ed-d1f0-40c5-9750-c7da20461395" />
+                    </propertyInstance>
+                    <elementDefinition Id="62a383e3-6cde-4c23-b7cc-a95944c14880" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c84c9fd3-8b03-4a54-8c4c-baf23467f420">
+                    <propertyInstance Id="8d7f3bcb-0bb9-426b-a725-5d67a931e483" name="Inheritance" value="none">
+                      <elementDefinition Id="7d562dfb-b18d-44eb-a7bc-2e4660e3102f" />
+                    </propertyInstance>
+                    <elementDefinition Id="116054dd-bd4f-4600-a005-c9a6c0802cc8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1bd0ed51-0e90-4f59-9116-f5e20500d3f9">
+                    <propertyInstance Id="9eaf2020-6fef-4919-a496-fb226b525fe4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b8dedc04-8a2b-4289-b863-ee07c8ac01ac" />
+                    </propertyInstance>
+                    <elementDefinition Id="063b90bb-a7b5-4658-a507-f2b37a1ae627" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9035abb1-a5f7-4054-8b27-c2d651a92e46">
+                    <propertyInstance Id="a046b4f9-eead-4d95-ad20-dfadfa4c711a" name="params" value="false">
+                      <elementDefinition Id="94f9259d-99e1-4df2-8f01-fa68b8bbce3d" />
+                    </propertyInstance>
+                    <elementDefinition Id="cabbb1bb-d706-414f-b41f-d5f25f06e691" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="bfded137-b84f-4074-8017-5b4c332862f6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a3fb92bb-f38e-4a06-9002-ce0dbdbd7ccf" name="gameSettings" direction="In">
+                  <referencesInternal>
+                    <reference Id="5fb001bb-8c09-4392-a088-02d792494617" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIRandomGenerator)]) ParameterIdentifier%3DgameSettings" tag="ViewCode">
+                      <elementDefinition Id="bac8326d-9583-47dc-b0a8-be8968605d5b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="77fbdde8-cd1a-4500-b9b2-22c5d4df831d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8aaf2f7f-49fe-41b5-8756-57504474c50c" LastKnownName="IGameSettings" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="78965826-9f32-467a-8bdf-19a8918d04fb" name="randomGenerator" direction="In">
+                  <referencesInternal>
+                    <reference Id="647432e1-0e01-4dfa-9c5a-3dc014fb77e4" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIRandomGenerator)]) ParameterIdentifier%3DrandomGenerator" tag="ViewCode">
+                      <elementDefinition Id="784c1dbf-b6c5-46fa-b405-68782a1a19bb" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="40d51206-75f0-46ad-b83d-f56dc773ffb4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="df226848-b9e3-4d28-ba98-bfb6888179d3" LastKnownName="IRandomGenerator" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8ef12038-2055-4424-b7db-bb0666c0fcbf" name="Start" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="d655f881-3dca-435f-9f7a-2c7847d3b9d1" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DStart" tag="ViewCode">
+                <elementDefinition Id="191818a1-228d-4c50-b8fd-b5cf159969a3" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="2f24821d-8148-4b90-b99b-510dd4400943" name="method" profile="CSharpProfile">
+                <elementDefinition Id="ef4b0ec1-bf23-4f64-a556-535dbdfd58bf" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5104d126-c56e-4574-8ebe-89525e7dd154">
+                    <propertyInstance Id="97cbeacc-fb8b-4302-8c62-9718382e0108" name="ClrAttributes">
+                      <elementDefinition Id="3f6cfc1c-0a8b-4da4-bb09-ae8e09ccd408" />
+                    </propertyInstance>
+                    <elementDefinition Id="b7c74264-b2bb-4d6a-ab70-77530a162647" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0b79a579-a669-4887-9655-f55869a95331">
+                    <propertyInstance Id="e7ddc55d-a185-40d3-b527-fafd87f1c7c2" name="IsPartial" value="false">
+                      <elementDefinition Id="1ee06217-a9dc-4231-98d9-e923a2b6dbe3" />
+                    </propertyInstance>
+                    <elementDefinition Id="9ae03871-14c1-4c05-b2be-a7fc37cb5bc5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9f536ffa-b097-48fb-862a-a284b082b67d">
+                    <propertyInstance Id="44915617-bed0-46b0-9f34-ef0b99f982c2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="bf10a163-cbde-46da-9495-8a15cbb64c02" />
+                    </propertyInstance>
+                    <elementDefinition Id="7a92d135-1475-45c4-a384-e4c23d874f38" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fc628f75-1770-421b-950a-e183fb05dde8">
+                    <propertyInstance Id="f371a439-da08-4a8f-8749-329513839bfe" name="Inheritance" value="none">
+                      <elementDefinition Id="f52b8156-41cd-4b94-b8a3-447d6f76dc50" />
+                    </propertyInstance>
+                    <elementDefinition Id="d97804e0-6061-47ba-b169-81766834a89e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6716fa40-923e-407f-a31e-b74680751a90">
+                    <propertyInstance Id="cabc5deb-e993-4ab0-9874-a7f7575c9b43" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6153639f-921e-49ac-bb8f-c0d53b7567f5" />
+                    </propertyInstance>
+                    <elementDefinition Id="fac84fdc-a6bc-484c-9490-544145f7044f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9e8d4f02-c301-4274-a108-b4ac5ae9b0bc">
+                    <propertyInstance Id="fbfd750b-3200-4d86-9e43-921fe210921c" name="params" value="false">
+                      <elementDefinition Id="8cfcb870-53ec-42b7-91de-f05569ff8195" />
+                    </propertyInstance>
+                    <elementDefinition Id="a18a1784-d8c5-4794-9e64-fb23b4a77c2b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b47aaf47-8366-42be-8d3f-c1cc182e20f6" />
+          </operation>
+          <operation Id="07517e17-7983-4ff3-8d2f-dfdf3a034615" name="Stop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="7c2df659-eda4-4d24-a32b-e0bde7f3f296" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DStop" tag="ViewCode">
+                <elementDefinition Id="90f8a13a-4f31-4a99-ae3f-9d45b6a09df0" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c0ad6e70-be6a-4041-9f3c-231732015ad3" name="method" profile="CSharpProfile">
+                <elementDefinition Id="93b00e98-8c0a-4ee1-ac2a-b13585ee770a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="33ae3ad2-c969-4ccb-81e6-b4e9759c9593">
+                    <propertyInstance Id="6e89e32b-4a17-430b-8074-15c41f97bb0e" name="ClrAttributes">
+                      <elementDefinition Id="a8fdff0f-4948-4396-aeb9-69a741bfb647" />
+                    </propertyInstance>
+                    <elementDefinition Id="fdd43df9-917e-43ac-963e-0a65fc547e87" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e2aa9ad4-4e7b-4b34-a272-e82cd3ded90d">
+                    <propertyInstance Id="3d5abc05-3d88-4eb4-a769-399dde7cde23" name="IsPartial" value="false">
+                      <elementDefinition Id="4c96b95f-d51a-46ab-b890-23a699dce76e" />
+                    </propertyInstance>
+                    <elementDefinition Id="ee8049b3-3821-4ec1-9f94-7791f47e4ff5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="82d5f8f1-6345-4e9c-bf42-fee1cefc926e">
+                    <propertyInstance Id="afb25df7-32be-4f11-8e13-9b54e38694dc" name="IsUnsafe" value="false">
+                      <elementDefinition Id="59debfc5-5cc2-4a69-bfc2-049c7e8a8c98" />
+                    </propertyInstance>
+                    <elementDefinition Id="65a3629f-3661-499a-9e1d-04bbd50ea4c7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="94bf818d-3cb3-4984-ba2f-c3c268e9d5eb">
+                    <propertyInstance Id="dd4e3231-d99d-4040-8d81-c3bd5b4121a4" name="Inheritance" value="none">
+                      <elementDefinition Id="3c1f608b-2c05-4d17-826e-0ba531626087" />
+                    </propertyInstance>
+                    <elementDefinition Id="1f61316d-0472-43c4-82d4-2456f5003278" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d8473878-ba7f-4bd7-b8bb-e52add30b1f2">
+                    <propertyInstance Id="e340e897-fbf1-4110-8c64-a231d2f99667" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7c822b04-ee56-4b43-8584-798a803fa26e" />
+                    </propertyInstance>
+                    <elementDefinition Id="25d212e4-7c11-44bb-ad17-d88b36a826dd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="86ad4f8c-0435-482c-adf1-bb2fdf9179e0">
+                    <propertyInstance Id="1d2cd104-6276-4fce-acb4-1422b53cd0a4" name="params" value="false">
+                      <elementDefinition Id="da755a4d-60e1-4ef7-bde3-8d41abf1f28f" />
+                    </propertyInstance>
+                    <elementDefinition Id="278d0143-e291-4f45-8a18-6a68f66f7c3b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="bde85424-0ae1-4693-9d46-1b9673804c9a" />
+          </operation>
+          <operation Id="83a98ee2-7dcb-4f98-8b05-fd46b14c66e4" name="Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="b52fca65-cdb0-45be-a618-bc36d19f3760" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DMove" tag="ViewCode">
+                <elementDefinition Id="adcee54e-3aba-482b-80ba-13b51ebf4759" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7fe5aec5-cf58-4a0e-bb46-9f7e9d3eb4c7" name="method" profile="CSharpProfile">
+                <elementDefinition Id="0457d915-9f07-4e42-b18e-322e7b1e1cba" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c36182f0-d3c1-4c12-8e33-3e61f59d4ce1">
+                    <propertyInstance Id="55b6ae1e-c183-4991-8b0d-dd701adfbb7d" name="ClrAttributes">
+                      <elementDefinition Id="f0382b49-1379-4f4c-9951-b4b761d52df5" />
+                    </propertyInstance>
+                    <elementDefinition Id="5769fafb-b4ef-4510-9326-e9e7492dd59a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d955150f-bd48-4ee3-9d41-4d965b156eaa">
+                    <propertyInstance Id="a36219ff-83bf-48fb-af2b-8a26a74e4ef9" name="IsPartial" value="false">
+                      <elementDefinition Id="44798030-d14d-4cfe-9a29-26269f176d17" />
+                    </propertyInstance>
+                    <elementDefinition Id="cd1fd088-a663-4ac8-a607-0f866dd0e5e4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ce228cb8-6462-4910-b14e-973d4855876e">
+                    <propertyInstance Id="22b2ed18-602d-4881-b1c0-019010db065e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="62f85a9f-9760-410a-8c9f-8080a2c847cc" />
+                    </propertyInstance>
+                    <elementDefinition Id="4a48c3a0-4f26-4a5c-96f1-fc83dd93c1a0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ff595d9c-8a2a-45b7-a4be-66a10a1bd8e9">
+                    <propertyInstance Id="57576840-c328-42a5-9563-7d9c554089b4" name="Inheritance" value="none">
+                      <elementDefinition Id="ad64d114-6888-4560-bc2a-5fdb418dc4ff" />
+                    </propertyInstance>
+                    <elementDefinition Id="e383e8e0-0e8e-4f7c-bfbe-d5f6a5b75b03" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5fd7af70-12d8-459c-ab7f-b1117c63f9d0">
+                    <propertyInstance Id="0823ef23-b875-4155-955a-51d5b3e220bc" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="246fdabb-aaba-4cbe-9c2c-8800f741484a" />
+                    </propertyInstance>
+                    <elementDefinition Id="d5148c72-3aea-405e-bd87-3065c8dc61ec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="296b35ad-505b-4027-9c0e-cc3a86ef5094">
+                    <propertyInstance Id="68951387-12a5-4eca-bf9f-fba39efeb962" name="params" value="false">
+                      <elementDefinition Id="a19809e3-6d94-4f04-8b27-4466f2b0e11c" />
+                    </propertyInstance>
+                    <elementDefinition Id="76f9d5c9-af17-4668-bdde-13278075dfe2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6b114401-9593-43be-a7be-24e03f245adf" />
+          </operation>
+          <operation Id="f0d5aea8-78b4-4479-bec3-2c47a819b8d9" name="MoveCheck" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="8a2496b6-1a45-4d0f-9bfe-ed3b5bb312bb" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DMoveCheck" tag="ViewCode">
+                <elementDefinition Id="2cb2aeb8-5877-469a-90ec-230bf820747c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9d6b4b4f-68b6-43af-9a08-5fd171c0f14a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="0ef9a641-3650-4784-90bc-e93365fb3524" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="02a187f0-870a-46b9-9212-6f721f92cd80">
+                    <propertyInstance Id="dae2f302-9803-4d90-8829-54420e70235c" name="ClrAttributes">
+                      <elementDefinition Id="400d2b26-52cf-48bc-a2b4-fc900e213ddf" />
+                    </propertyInstance>
+                    <elementDefinition Id="9dbfa008-e7b0-4361-91c3-2fc14d929f6c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c5a3c9f6-ed91-422c-9e46-9c36904a6d98">
+                    <propertyInstance Id="138f8594-3f6a-4643-b83b-1753f39f5c4f" name="IsPartial" value="false">
+                      <elementDefinition Id="6aa18fb3-dbed-4752-be69-50e2d0bd541c" />
+                    </propertyInstance>
+                    <elementDefinition Id="34698815-8e58-4ef8-9533-332d6fcd47b8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="609aa079-c23f-421c-9941-ef21cf7a57d4">
+                    <propertyInstance Id="38d51d31-865b-4dd6-bbd7-40d6df7d6feb" name="IsUnsafe" value="false">
+                      <elementDefinition Id="207e3a1e-67ab-4ac9-96f8-ad9067a0f395" />
+                    </propertyInstance>
+                    <elementDefinition Id="a08da947-da97-45a2-ab48-0e5cad5d0d81" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ebaf45f2-fd46-4725-a05a-92c42e9ed4d6">
+                    <propertyInstance Id="767d62bf-bd65-413e-8cfc-65d8e29eabcc" name="Inheritance" value="none">
+                      <elementDefinition Id="401ab9cc-2d7e-48dc-805d-9c51fc2d2400" />
+                    </propertyInstance>
+                    <elementDefinition Id="f49e48c3-5df4-4593-9dbb-465ae048370e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6d729730-438b-4b78-ae8f-17187dd56589">
+                    <propertyInstance Id="97bd05ad-63f5-4522-9751-69f47446cd20" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="24aea9ad-9d71-4490-8403-a92cc6bb6c57" />
+                    </propertyInstance>
+                    <elementDefinition Id="14ddda7f-7793-4b86-a5e8-cd82392bf8a5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0e2bae7-8706-4845-8bd7-bb133f78de9c">
+                    <propertyInstance Id="e5afc65e-4403-4f5e-af35-e30146d1c7a5" name="params" value="false">
+                      <elementDefinition Id="d413b1e4-2c3c-4d19-9ea7-bc34b10e24ce" />
+                    </propertyInstance>
+                    <elementDefinition Id="0911a7ff-9c0e-4fb2-8e6a-17221aba1da3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="735882f1-990f-46bd-9a04-b2c721434d73" />
+          </operation>
+          <operation Id="e00d0406-6b85-4299-81ff-5260de36c11f" name="Eat" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="972cee77-1837-4e1a-9afe-bcfdb1dcce3a" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DEat" tag="ViewCode">
+                <elementDefinition Id="4c6af35e-ae26-41ae-b9db-8c36874345f2" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a14bb870-a8dd-4e7d-a4e7-1d45562ed00f" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d324bb27-1f96-4f7f-9877-5685cb43c79f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ee8e1573-31ec-4bd9-9ec1-fb7f2a7e376c">
+                    <propertyInstance Id="eaf886f6-accb-43ca-bf80-b367ac4a5280" name="ClrAttributes">
+                      <elementDefinition Id="b2110594-c5ab-4c98-99ae-652f3a7b0c9c" />
+                    </propertyInstance>
+                    <elementDefinition Id="808faef9-3e66-4fbd-abca-8178e16e20e1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3973778a-e415-4bb8-a53e-87d146058672">
+                    <propertyInstance Id="3f99c41b-fb1e-41f5-a327-73eb169408fe" name="IsPartial" value="false">
+                      <elementDefinition Id="608fc41a-9e9d-4b3c-8d19-7b186ee78734" />
+                    </propertyInstance>
+                    <elementDefinition Id="665e9918-53d9-4126-964c-487dd157c80d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b687300a-3301-48c9-80e0-6d1d90e3dd1b">
+                    <propertyInstance Id="c22e1b11-0448-448e-833e-3b2e2108c540" name="IsUnsafe" value="false">
+                      <elementDefinition Id="393c8eea-b810-4ee1-ab02-9e054665340a" />
+                    </propertyInstance>
+                    <elementDefinition Id="10032524-66e4-48cb-80a5-365bb68602be" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6338dc74-5191-48ae-836b-74c2a26e14eb">
+                    <propertyInstance Id="b4846123-52d0-434f-88fe-bf1c50ad62a9" name="Inheritance" value="none">
+                      <elementDefinition Id="9b060b9a-c85e-48ea-863c-006ec389d10f" />
+                    </propertyInstance>
+                    <elementDefinition Id="0b4c5e49-9b73-4b8b-8039-0af88bb33987" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3b6cfe21-2750-4e90-93a1-d9e4396bd056">
+                    <propertyInstance Id="b46fc58c-9814-4c6c-a864-bb9afd99dd72" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="12808a5a-2571-4a19-b166-1465a16aa562" />
+                    </propertyInstance>
+                    <elementDefinition Id="877a5db3-bf79-4f3c-a9fa-74568562cf51" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="addcb318-7a67-446f-bdf0-eb6407cfc9b7">
+                    <propertyInstance Id="d589c725-e49a-4eba-9100-b2b7574b51d2" name="params" value="false">
+                      <elementDefinition Id="0e334e51-fa91-45bc-ac08-d9d42212d3cc" />
+                    </propertyInstance>
+                    <elementDefinition Id="4a37a3b5-5414-4a36-91ee-8e1142e61d86" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c08a97f6-982c-4782-93ba-aac27920774f" />
+          </operation>
+          <operation Id="c816da57-4c42-4b32-b3ff-28605e71287d" name="GenerateFood" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="95aeea79-19d8-4973-ab44-4902f3dfdb8d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGame Member%3DGenerateFood" tag="ViewCode">
+                <elementDefinition Id="91b555d5-c1bb-4975-9d0e-cb905f519627" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="bfd42296-054a-4c01-8589-ea124d542cb7" name="method" profile="CSharpProfile">
+                <elementDefinition Id="bca4cb6d-ef14-4dcf-9354-0e9a6475b1a3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4a179176-51b4-406a-9a18-9a5670628f45">
+                    <propertyInstance Id="3a1cc0c6-dab2-4b42-b2d8-32266592df3a" name="ClrAttributes">
+                      <elementDefinition Id="cdf7046c-acb4-47d8-bf1b-d70376705646" />
+                    </propertyInstance>
+                    <elementDefinition Id="a8a1b66c-7343-47aa-9a23-12500ef4d815" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fc3cfb2e-216e-4ace-b791-ab1d81094504">
+                    <propertyInstance Id="7f12e87a-d25c-4719-8272-facbe1a0ec78" name="IsPartial" value="false">
+                      <elementDefinition Id="c04dc6ec-1c3b-4464-bb5d-face6ce95c62" />
+                    </propertyInstance>
+                    <elementDefinition Id="1faf6a07-8458-4410-a762-657b68cdd059" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="38c9d3bb-5c96-4301-b2ae-8835b7ba377b">
+                    <propertyInstance Id="59945fc3-fbf1-42b1-9cfb-99951d4898c1" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c5b618f5-0fbf-45a9-b4d9-07342593ca5f" />
+                    </propertyInstance>
+                    <elementDefinition Id="86da98b9-8e39-431b-82b1-a9122caa0c7e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b89715b7-df5a-4512-a64a-ddf43e1604a6">
+                    <propertyInstance Id="cf53f985-ef62-4d4a-be96-1381d400cd55" name="Inheritance" value="none">
+                      <elementDefinition Id="d5245ea2-2e9a-434f-9ed7-f98623b66c77" />
+                    </propertyInstance>
+                    <elementDefinition Id="7f5cb9bb-488d-41ed-81db-136b2ca6f8a2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c3fd529-dde0-41a1-948c-0b2caf4c09b7">
+                    <propertyInstance Id="a0ab8441-d4f7-4dd3-a19c-daeef0677b8c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="99785927-60e2-499f-9b28-e9e9c30a9d01" />
+                    </propertyInstance>
+                    <elementDefinition Id="1d325a68-2ef3-40ec-9f04-0da7226c8535" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="195e7417-23b7-4b6f-8877-f71ec90c55cd">
+                    <propertyInstance Id="dc6ea129-6fa6-4f54-bd51-0b6e4cc1e998" name="params" value="false">
+                      <elementDefinition Id="5135e01e-595c-4b63-a610-ff6754a7be55" />
+                    </propertyInstance>
+                    <elementDefinition Id="d2d00440-5169-44ec-9ae4-da8e980fe0f1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="589e3f5f-d214-467e-877d-8a9e45be4c65" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c679ddf1-71fa-48f9-bc46-a0df6cf5f734" name="Point" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::SnakeDefender::GameEngine::GameObject::Point">
+        <elementDefinition Id="306dbdfe-f5e2-476a-ae27-4e95426e0b23" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="809b567f-3dca-4799-a057-f5f236536b4b" name="Double" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::System::Double">
+        <elementDefinition Id="b5daaa38-fbeb-4530-8e9d-ec182d6d46c3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="024d5536-c016-4bb3-8f36-0e08b2449596" name="GameStatus" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::SnakeDefender::GameEngine::GameStatus">
+        <elementDefinition Id="aa66d715-c3fb-4524-9ad6-99fe7f177a26" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="075290a3-15d8-4550-aabd-a610ef891fff" name="Direction" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::SnakeDefender::GameEngine::Direction">
+        <elementDefinition Id="1ff34a71-0a10-442d-a9e0-27b33a61a196" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="808c8f5b-468e-4918-b850-1d9ccab9d2e1" name="List&lt;Point‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::System::Collections::Generic::List&lt;Point‎&gt;">
+        <elementDefinition Id="b72ce716-65b0-4aca-8d83-84681f95f16a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d08e530b-cf58-4417-b5a3-9737a419bb4a" name="Snake" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::SnakeDefender::GameEngine::GameObject::Snake">
+        <elementDefinition Id="ed60cba4-b4ab-466a-b9e7-6cd03770b715" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8aaf2f7f-49fe-41b5-8756-57504474c50c" name="IGameSettings" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::SnakeDefender::GameEngine::GameObject::IGameSettings">
+        <elementDefinition Id="f2cfec94-2155-41b9-9e8f-cd6b89c9606d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df226848-b9e3-4d28-ba98-bfb6888179d3" name="IRandomGenerator" isAbstract="false" isLeaf="false" cachedFullName="SnakeDefender.GameEngine.Modeling::SnakeDefender::GameEngine::GameObject::IRandomGenerator">
+        <elementDefinition Id="fb550754-7627-473d-8276-a6a11cc48c1a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="839d6358-112f-49c3-bd71-a7ff7a63f1d5" name="IGameSettings" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="46bb05df-915c-428b-b9fb-0882767c940b" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings" tag="ViewCode">
+            <elementDefinition Id="67077b10-0239-4171-9b93-2cc2066d55d7" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d5f4d941-afde-4e69-871a-ad3dc83df5f6" name="interface" profile="CSharpProfile">
+            <elementDefinition Id="b7df54de-9733-4021-b62e-869f71e475c7" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4a783d34-3646-444f-917b-48e6b4303533">
+                <propertyInstance Id="affe7ed0-50e4-4810-89ee-70140617ade2" name="ClrAttributes">
+                  <elementDefinition Id="e58bed7d-f13e-4f70-9cd2-e955fd9c4e3a" />
+                </propertyInstance>
+                <elementDefinition Id="d253a812-e94d-48c2-ba7f-c0abedd28246" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e0926da5-9f24-43d3-928e-828038696179">
+                <propertyInstance Id="c32760b4-f62f-464d-b8aa-907609b43fd1" name="IsPartial" value="false">
+                  <elementDefinition Id="57d400d5-b4d7-4409-9cf7-5a11625119f7" />
+                </propertyInstance>
+                <elementDefinition Id="5c3b698b-3ae5-4e61-9a26-68903d37eb8c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="539bda11-f34e-489b-8f45-6d6807fefa4c">
+                <propertyInstance Id="f19633b5-09dd-44c1-9ff3-bdd901616f21" name="IsUnsafe" value="false">
+                  <elementDefinition Id="263f5f48-4e84-4214-81ef-025b6d20127e" />
+                </propertyInstance>
+                <elementDefinition Id="eedb1864-a70d-48e3-9a53-2c4a743c02eb" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="29e3f353-8ee4-47ed-a2dc-f41a608a28e7">
+                <propertyInstance Id="35387446-e93d-473e-8216-597ddc248740" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="4aeaae38-d12d-4ea3-a203-aa15007404b1" />
+                </propertyInstance>
+                <elementDefinition Id="7f3a2d8a-f007-4f7b-9a8c-ac07c1d734f6" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="f2cfec94-2155-41b9-9e8f-cd6b89c9606d" />
+        <targetEnds>
+          <association Id="84b01d97-f952-4116-b716-7659e8f10eaa" isDerived="false" sourceEndRoleName="IGameSettings" targetEndRoleName="GameMoveDirection" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="4c4dc619-d2d5-4dbd-9fa1-1d5d7d0852b4" LastKnownName="Direction" />
+            <description>Property GameMoveDirection references type Direction.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ecb13998-4305-4e76-bf66-34679f57a81e" name="IGameSettings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="e75d1b94-45b7-4ca1-b045-3b2442ababc2" name="Lower" value="1">
+                      <elementDefinition Id="c0752dca-7d34-44cb-a071-7ebdb448e29e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="de32e176-a3e1-4982-8c55-06d59eec8054" name="Upper" value="1">
+                      <elementDefinition Id="263428c7-f41e-45e6-99dc-6ad073e857a9" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="161ff2e0-f09f-4101-a31f-14f67a2d7326" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2755306-7f70-49e9-b1b7-397c11fa68ea" name="GameMoveDirection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9b713e39-0f9b-45bf-bbe7-b52832a27116" name="Lower" value="1">
+                      <elementDefinition Id="6818c435-1788-4493-a9b0-67db6b3c0e3b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="27b5976b-d7f3-4f80-a999-58f2557f294c" name="Upper" value="1">
+                      <elementDefinition Id="fe5b8c00-91b8-4ba2-a53d-862e35fc7dcf" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="310a981e-1f7e-433c-9f6b-61675c494bf6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2b437650-99e3-43c8-9888-461e74b72edc" />
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property Id="88fbbd79-cc41-489a-aa35-5a11c8656084" name="GameBoardWidth" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="752cf038-d0ee-4718-84c9-e1fb7c1db07e" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings Member%3DGameBoardWidth" tag="ViewCode">
+                <elementDefinition Id="8408ee9d-2f8e-4212-a3e5-a415f00bd027" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="2792c1ee-94ef-4fe7-b369-20b01f633e5c" name="property" profile="CSharpProfile">
+                <elementDefinition Id="6cfa7b98-6563-42a5-aef0-62590167f34f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a34569e0-b7a7-4c66-9f24-6cd14a7a4b96">
+                    <propertyInstance Id="f418ea1d-17dd-440c-ba1e-6afb4148c661" name="ClrAttributes">
+                      <elementDefinition Id="1d280e92-32f9-44bc-991b-133eb3c3335d" />
+                    </propertyInstance>
+                    <elementDefinition Id="328bc2ad-ecfd-4812-99a8-ac330583fa3f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4909ea90-cc41-4a27-b61d-eb780e5c2128">
+                    <propertyInstance Id="edb16b3a-e2bb-424f-b81b-76ec94abefb6" name="Get" value="public">
+                      <elementDefinition Id="7eaedada-421e-4e37-8cbe-781a85cb327c" />
+                    </propertyInstance>
+                    <elementDefinition Id="ef29cb60-6b7e-4ac1-9e5f-ffc78553c378" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c9210eb8-8cbd-40db-a9fc-6ec8c3fa2e32">
+                    <propertyInstance Id="c04d3a43-8601-4c49-9fea-1c1df564567a" name="HasBody" value="false">
+                      <elementDefinition Id="a201eb65-6e8e-4c63-a324-5cc437ad4ccf" />
+                    </propertyInstance>
+                    <elementDefinition Id="23516ed0-a1bd-418f-a797-73625c295858" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="858be677-18aa-4eb2-b3ce-d1d4397b63b4">
+                    <propertyInstance Id="c54cd303-36fd-4163-869c-f5406742b687" name="IsUnsafe" value="false">
+                      <elementDefinition Id="09a70aed-6e8d-42fd-9f6b-e991ce9ccec7" />
+                    </propertyInstance>
+                    <elementDefinition Id="24a72a6a-a9b0-4191-8817-657f504501ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa621d13-aaf2-40e6-b6f0-9f5926e988c2">
+                    <propertyInstance Id="7c75d499-720a-43f1-a9aa-6995af4d97bc" name="Inheritance" value="none">
+                      <elementDefinition Id="7ba7f7a2-f730-43af-b607-98c7aab1b87e" />
+                    </propertyInstance>
+                    <elementDefinition Id="cf63b27e-47fe-44f5-a07c-fa783275fbe1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2b1aed47-0201-4506-b97a-83c2eba0163d">
+                    <propertyInstance Id="0bd13391-b934-4804-843e-68a0fcb730c9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a9c26de1-d30b-499a-bc99-2ab7d2858baf" />
+                    </propertyInstance>
+                    <elementDefinition Id="2ae43860-acf1-4703-8184-d45f5458157a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bddfcec6-7577-47be-aff7-2314771e980c">
+                    <propertyInstance Id="c9206ddf-64d4-4f2f-9d2f-ef94055b1513" name="Set" value="public">
+                      <elementDefinition Id="f9bb1f20-123f-4219-8bd5-4033990fefc5" />
+                    </propertyInstance>
+                    <elementDefinition Id="e37dfab7-eeab-4ae1-be58-32b0c641e6e2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c4ce82fd-18bb-4b96-87d8-e161881abb52" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="3a5ecbc4-d6a0-4a83-a529-b995b3dd835a" name="GameBoardHeight" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="0ca069f3-21d2-497b-a360-4cf71ac4b716" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings Member%3DGameBoardHeight" tag="ViewCode">
+                <elementDefinition Id="68dcac90-b5f8-4efe-94d4-3f54a9d97b55" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="89419380-7e08-4db4-b8ab-d4cc62c188e6" name="property" profile="CSharpProfile">
+                <elementDefinition Id="2c96230e-50e6-4409-8a09-b522e2f7213a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7a891d60-b612-4c5b-abae-8ba0c9ce39d5">
+                    <propertyInstance Id="72f9f170-cbb5-400f-a8f1-edd9581b367e" name="ClrAttributes">
+                      <elementDefinition Id="2bbdbca2-34c2-476c-a26a-94141cef4f00" />
+                    </propertyInstance>
+                    <elementDefinition Id="03d6f380-3e98-4148-a856-33c33b776415" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d57f09d3-04bd-4711-b488-1ad871600355">
+                    <propertyInstance Id="7bc7c8c8-1ee3-4821-af97-92008ed8a62d" name="Get" value="public">
+                      <elementDefinition Id="21616b6d-f71b-426f-9efd-3de5429735a2" />
+                    </propertyInstance>
+                    <elementDefinition Id="8716a1e4-2c76-4dd0-b1ae-87282d184468" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="095ce755-d886-4f64-aa5e-561607b61140">
+                    <propertyInstance Id="769daa9d-ab1b-4400-8d67-11e39ec98094" name="HasBody" value="false">
+                      <elementDefinition Id="cab59ddc-5ee0-4d38-b630-d7a4a3ee99ca" />
+                    </propertyInstance>
+                    <elementDefinition Id="06fc6921-3713-42ce-9b59-f98c6061bd54" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="348b669b-b363-4ac5-bebc-776fddd27639">
+                    <propertyInstance Id="b34331e2-b459-4684-b5e8-17e603817a20" name="IsUnsafe" value="false">
+                      <elementDefinition Id="9498e2c5-f7aa-4f3f-b734-09e298bd7444" />
+                    </propertyInstance>
+                    <elementDefinition Id="324a469b-738e-46e1-b844-a319d8a76cd6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa631120-e036-46d5-a356-db2b38d11dcd">
+                    <propertyInstance Id="4228131a-dd99-438a-bf35-d9dd2cd0b84f" name="Inheritance" value="none">
+                      <elementDefinition Id="fb01ea57-c883-4a45-aa69-332c6bc88126" />
+                    </propertyInstance>
+                    <elementDefinition Id="5bf98346-9b4d-4471-a71f-7167a9fde582" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b64e8237-a8ca-4a82-85b4-587f69f410a5">
+                    <propertyInstance Id="b5849826-3ca9-4ee2-ab92-5a57524dacd9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="bbfc4a66-5173-4ba8-9e71-20bd7d1584d4" />
+                    </propertyInstance>
+                    <elementDefinition Id="a2369925-9a36-4ccc-b59c-1c748550b9c1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0f2ff18a-3475-4f45-b8a8-ecc8e641f47e">
+                    <propertyInstance Id="673bef8d-321d-4e6f-8874-6732c0a1c55c" name="Set" value="public">
+                      <elementDefinition Id="4a4a9a59-6fe0-4d0d-8bcc-42fea452cc12" />
+                    </propertyInstance>
+                    <elementDefinition Id="92688548-cb48-4839-8376-36b8bcf0d603" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ca5ca33b-d5ae-4699-adb1-400ff81ffb3d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="68fb9e13-e55a-4817-9eb1-1e2dca2b9d5c" name="GameSpeed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="bd24be38-dcb7-402a-a0aa-96f3ff775274" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings Member%3DGameSpeed" tag="ViewCode">
+                <elementDefinition Id="e18eca36-4b9d-4e62-9512-3b51fb42dc8e" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e24d9924-d03d-4e64-b6ec-06c613c64cd2" name="property" profile="CSharpProfile">
+                <elementDefinition Id="8deb4dfc-f001-4f6a-bc02-0a3bacf0ee64" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7032ecd2-98eb-4e9c-b367-a545b3dc7a78">
+                    <propertyInstance Id="a5670692-a0b8-45c5-89dd-87ca73867d76" name="ClrAttributes">
+                      <elementDefinition Id="a91ce4a0-a6e2-49c6-9030-15c809cf2540" />
+                    </propertyInstance>
+                    <elementDefinition Id="4eccdb83-bf2a-469e-8ae3-8ac600b159cc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3e28d5b1-ea0b-40c0-9f74-8221765dabd4">
+                    <propertyInstance Id="687e431b-6ad5-4d06-9e26-2d0854559750" name="Get" value="public">
+                      <elementDefinition Id="73c67c05-bbc5-4d7c-8d80-853149b2a1f3" />
+                    </propertyInstance>
+                    <elementDefinition Id="fee71d33-ddbd-4904-979b-06ce48483e78" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8d54c1e0-131e-4a26-9359-0777b7bb1995">
+                    <propertyInstance Id="37990cc2-2dfd-44f2-be6f-04634db72ee0" name="HasBody" value="false">
+                      <elementDefinition Id="180761bb-51f7-4058-92af-9d3eb8952eb1" />
+                    </propertyInstance>
+                    <elementDefinition Id="c52ab85a-864f-4b42-860f-f52dc0612686" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e69e891a-4ed9-4721-a804-48ed874a9c62">
+                    <propertyInstance Id="5dc95f9f-bd45-41a4-b0f4-44bea555ea68" name="IsUnsafe" value="false">
+                      <elementDefinition Id="61ec8aa9-7cc3-470b-883d-05101582f5dd" />
+                    </propertyInstance>
+                    <elementDefinition Id="7be93cf1-d993-4767-9f36-6a682542a9db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c8a1262a-42a3-4a79-b8d1-eeea4971797a">
+                    <propertyInstance Id="2882172d-bf15-4fd2-9c45-30e8545859dd" name="Inheritance" value="none">
+                      <elementDefinition Id="b166263d-37b6-4e9e-bb34-36c7d5ca4aef" />
+                    </propertyInstance>
+                    <elementDefinition Id="56c034c8-9d20-47b1-8a87-717d4fd8ac4d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4e24b162-50a8-4361-a855-1078abfbd8d9">
+                    <propertyInstance Id="09938eae-ac8f-4d6b-92b1-5af5a386a300" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b5384fa1-922b-4339-a880-d29699c48894" />
+                    </propertyInstance>
+                    <elementDefinition Id="42d00a47-29aa-478e-b5ed-8c3a3097bc95" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="544d6310-ccd6-4d72-a17d-cea9cf20bb8a">
+                    <propertyInstance Id="b8e8f362-22a6-44cd-ab50-4405d3267784" name="Set" value="public">
+                      <elementDefinition Id="4996ed9d-3b7d-46c5-a3ef-a62244877d8f" />
+                    </propertyInstance>
+                    <elementDefinition Id="8b36a936-8e0b-4870-9293-fb52c5514027" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="aa81873d-5ec8-4544-9fd1-0dee0fe1af16" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="92c7d647-34eb-4c2c-b921-9bc76a487492" name="GameScore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="cd8fef77-3bc5-4d2f-b129-18d1df723fcf" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings Member%3DGameScore" tag="ViewCode">
+                <elementDefinition Id="e11a177d-ab81-4cbb-b8b4-35be0384e422" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5903bf1f-76aa-4bed-8e10-36e1c9245e15" name="property" profile="CSharpProfile">
+                <elementDefinition Id="d900654f-d4ee-49bf-a729-1ea71efafab0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fbccbf49-4208-4c10-b4e8-0159cd0c3964">
+                    <propertyInstance Id="8d858211-aa9a-4f5f-8718-9118f37f8979" name="ClrAttributes">
+                      <elementDefinition Id="fca32dd2-5a83-4f67-a7ad-6190c7af35f6" />
+                    </propertyInstance>
+                    <elementDefinition Id="965b17f9-3f4c-4f2a-9004-841951f955f8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6e580607-1e5e-4492-827c-971232027fda">
+                    <propertyInstance Id="f3c6af2a-93af-4a76-a1c9-a609c37a6b9a" name="Get" value="public">
+                      <elementDefinition Id="50789763-342d-4d8f-81f4-6d4875ef5cf1" />
+                    </propertyInstance>
+                    <elementDefinition Id="46cb9a56-5b13-4cb9-ab72-415c72fcfe17" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2651ab83-8b28-4e4f-bf6c-2321a973f6e7">
+                    <propertyInstance Id="1e8bc368-3e0e-4c89-a890-cac78f7df2ec" name="HasBody" value="false">
+                      <elementDefinition Id="6752eebc-bcb2-4c58-ae27-46d24c94892b" />
+                    </propertyInstance>
+                    <elementDefinition Id="fe355b46-c6d6-4af9-918b-51bc55043475" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8ad61a46-d322-497d-b89e-9b2f21a36a55">
+                    <propertyInstance Id="21b72be9-02f9-4608-998f-ddc3eea8e530" name="IsUnsafe" value="false">
+                      <elementDefinition Id="44c10055-a1ef-4527-b853-aaa77b7fdc88" />
+                    </propertyInstance>
+                    <elementDefinition Id="e1d86b0e-169c-4f57-ab86-93c2550ca6a8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4d16705b-e463-4756-af27-b2950ed6fe97">
+                    <propertyInstance Id="56cd4752-328a-435f-8468-c450070f644a" name="Inheritance" value="none">
+                      <elementDefinition Id="530a974a-ac6e-4df4-ba14-fb9d1b2f627b" />
+                    </propertyInstance>
+                    <elementDefinition Id="81b4e772-c910-4c99-a61d-6a4361d9ac33" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="526e4a79-9868-4f3b-b16e-862b63d8408b">
+                    <propertyInstance Id="730a561d-b50a-489d-badc-88c06b45fa38" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ddb719bc-79bc-4e14-92e7-876c29854794" />
+                    </propertyInstance>
+                    <elementDefinition Id="3ef616cf-f86f-4b57-aa65-1dab86d63a63" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="44aeac3e-365f-4fc6-9a49-867b8d9075c5">
+                    <propertyInstance Id="6719c24e-ecbf-480b-bb25-35d30541688d" name="Set" value="public">
+                      <elementDefinition Id="ece7e975-787f-4eae-b0a9-c25c5dd5ebc9" />
+                    </propertyInstance>
+                    <elementDefinition Id="ddd44f57-2095-4f31-95cc-c5c9db1c9553" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7069464f-ecc2-442e-a3b4-507678d4dde8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="809b567f-3dca-4799-a057-f5f236536b4b" LastKnownName="Double" />
+            </type_NamedElement>
+          </property>
+          <property Id="25be8f59-3edb-4bba-aa7a-fe422c27e397" name="GamePoints" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="7b01e8a5-c0a8-4513-ab59-c631a9120379" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings Member%3DGamePoints" tag="ViewCode">
+                <elementDefinition Id="273560b0-63be-48cd-b672-cbcd46c47c63" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e48b7447-7105-4238-ae55-9c94538b9f55" name="property" profile="CSharpProfile">
+                <elementDefinition Id="6533f4dc-95b9-4aa7-8a7f-625db184aaad" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a6b30729-dc5d-48b6-b8ed-a048461534c3">
+                    <propertyInstance Id="996fa2e8-ee81-418f-916e-baaa3b35faaa" name="ClrAttributes">
+                      <elementDefinition Id="ee7d13a9-e626-4723-9b0d-cca366fb1f36" />
+                    </propertyInstance>
+                    <elementDefinition Id="ed74c4f0-63eb-4034-a667-8938e5fb446b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7ff0172a-b575-4bc5-a907-aaef19d04f9a">
+                    <propertyInstance Id="6e245f48-cd13-4541-a57b-8fd5eb1c7e7d" name="Get" value="public">
+                      <elementDefinition Id="53f7aec7-b572-410f-82e2-ebbe9ce04dbc" />
+                    </propertyInstance>
+                    <elementDefinition Id="7e9232fb-4ff3-4fcc-a626-62c28a092d53" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a28a4b7b-a13b-446d-95b3-ea0f0d6dd7c1">
+                    <propertyInstance Id="f4101c04-1aba-48bd-8e95-47c8f49bce54" name="HasBody" value="false">
+                      <elementDefinition Id="1a060ede-9bda-4aab-8a51-571be5c1afd2" />
+                    </propertyInstance>
+                    <elementDefinition Id="7764df5b-79f8-48a4-bb87-77dfcb7e70d2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e7864247-2559-497c-aac7-36a9339cfa6a">
+                    <propertyInstance Id="b90b3e6d-7845-44d2-83dc-fc10fc39af4e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="e69f3b74-f377-4e7b-8f82-cdc43ff7ca4d" />
+                    </propertyInstance>
+                    <elementDefinition Id="ec778be4-8c73-4730-a498-d0774982b8b8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be661af3-37ff-4f50-9f14-98fdb233d3f5">
+                    <propertyInstance Id="0c76bda2-c1ab-4483-8db4-8de4643ebe00" name="Inheritance" value="none">
+                      <elementDefinition Id="6c22bf18-760f-455e-9bf7-f4d7e266bac1" />
+                    </propertyInstance>
+                    <elementDefinition Id="37437f2c-40e0-4629-a126-fca376f227de" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9da47b6c-4532-481e-9627-663ae53a7d12">
+                    <propertyInstance Id="8291a3ae-1566-4820-80cb-dfe7851dad9b" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c0caefff-6f99-495d-b2a7-ec7bfa660d24" />
+                    </propertyInstance>
+                    <elementDefinition Id="e4bf48af-c451-4a1e-8c33-6e5fec9d06eb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="08723617-9c68-4afd-bf2a-3f131950084b">
+                    <propertyInstance Id="30353006-a51b-4140-b914-313d8fac3a7a" name="Set" value="public">
+                      <elementDefinition Id="525b5a6e-04e0-441b-9df8-99f68a370cf6" />
+                    </propertyInstance>
+                    <elementDefinition Id="d1b48ff4-40af-439d-bfc3-e914a73dcddf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cbb3fa46-758a-461c-b760-dd533a44df6c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="f0450b2f-112f-4ea6-aaa0-bb7db3179314" name="GameMoveDirection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="299bcc7f-a4da-43a7-87ff-09ef0df31705" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIGameSettings Member%3DGameMoveDirection" tag="ViewCode">
+                <elementDefinition Id="ac673edc-b4df-4a78-90da-db94cdc868a4" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="67914e15-6834-4477-a67c-218ce220dcec" name="property" profile="CSharpProfile">
+                <elementDefinition Id="b45104df-f37c-4b98-a1d0-6cc5cd6850b0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="92c57e75-6423-4659-835b-30803e6fa87c">
+                    <propertyInstance Id="a73aed38-b257-4ae7-ac07-c93d44bf2830" name="ClrAttributes">
+                      <elementDefinition Id="3dab47f1-1f12-4d12-89fc-123ec9a2fb9e" />
+                    </propertyInstance>
+                    <elementDefinition Id="08fe68e2-9cad-4986-8be5-1ea71c48ca37" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d1c826c4-1236-410e-8c7c-ed81c268c175">
+                    <propertyInstance Id="71d012ea-3493-4054-9b4c-9c71f76e3576" name="Get" value="public">
+                      <elementDefinition Id="56b78747-26bd-4ddb-b03b-b134cc6b8873" />
+                    </propertyInstance>
+                    <elementDefinition Id="bd096b6f-576a-453c-a80a-97765060a1fa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d88d4aa0-c17a-430c-bf58-4b8227bf763c">
+                    <propertyInstance Id="f8d13287-a44c-40cf-b8d0-c85244ce5aac" name="HasBody" value="false">
+                      <elementDefinition Id="dcc5a54e-9625-4f93-9329-ed4148df1ff3" />
+                    </propertyInstance>
+                    <elementDefinition Id="db6e6b88-893c-4267-966d-304183094332" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a9965959-aa1c-41fc-9bc0-7395855da08a">
+                    <propertyInstance Id="2f36fc77-9294-42f1-9805-ab574020307a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="95ddfcb0-b3f7-44a8-a63e-e9bf0a61935d" />
+                    </propertyInstance>
+                    <elementDefinition Id="d480d706-0049-44d1-9ea1-08b0b489f16b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="49bd4426-6cdf-41ef-877b-aebf6f942ddd">
+                    <propertyInstance Id="18591497-ed3c-485e-970a-01bfa2cec53b" name="Inheritance" value="none">
+                      <elementDefinition Id="b69bfe1c-991d-4068-8979-5a3ffcd1e5a8" />
+                    </propertyInstance>
+                    <elementDefinition Id="d933d6de-1205-4235-a757-af55bb1968cc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8bdef66b-59d1-4ef7-b2a6-d743eb97d5c6">
+                    <propertyInstance Id="dcb2bc38-5561-4fd1-8510-452da49d71b7" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ce9eefa7-c502-49d2-a45e-03155cd3e920" />
+                    </propertyInstance>
+                    <elementDefinition Id="c5d56c47-652a-4909-9523-b6b922a95dc2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9b2281fd-1781-4c4c-b108-58934c60ec95">
+                    <propertyInstance Id="7dec9878-58c8-4b3f-960f-e0df053c3a55" name="Set" value="public">
+                      <elementDefinition Id="2b54622c-bf7d-4abf-8e3e-2123b4e8869d" />
+                    </propertyInstance>
+                    <elementDefinition Id="8af85afc-28ad-4a55-971b-ca08b0836924" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cd2a95bf-9c60-4f93-ab13-150e1f8c89d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="075290a3-15d8-4550-aabd-a610ef891fff" LastKnownName="Direction" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="4c4dc619-d2d5-4dbd-9fa1-1d5d7d0852b4" name="Direction" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="4f7b1379-2127-4b71-8381-6e4bc48f6b59" handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DDirection" tag="ViewCode">
+            <elementDefinition Id="a69e698f-7dad-4ba8-b2fa-971ad7dcc781" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="f0ad814f-24e3-4be1-9ae6-89e6e0aaa66b" name="enum" profile="CSharpProfile">
+            <elementDefinition Id="111f21c0-fbb2-469c-85ba-21a06e160d66" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="20ecce2c-c731-4b20-9496-ed56d56ef61f">
+                <propertyInstance Id="9c4f4e48-d100-47dd-9082-28462b08cd63" name="ClrAttributes">
+                  <elementDefinition Id="c40e903f-814d-42dc-974a-12ef9511a040" />
+                </propertyInstance>
+                <elementDefinition Id="72eda21f-557f-478c-979c-b2526ec07f52" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4eb18522-ccaf-4de0-b8ae-d4baf68ab8ab">
+                <propertyInstance Id="82e77999-f8f6-4fde-b92c-fd75665aedad" name="BaseType" value="int">
+                  <elementDefinition Id="c34e0b9e-131e-4467-a719-2e3fb4cc5998" />
+                </propertyInstance>
+                <elementDefinition Id="198743f3-1246-4265-9859-2d219c7d8686" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8c0a1ba6-cd15-4f3d-abad-37fa924fc3e7">
+                <propertyInstance Id="a24d64f7-bac4-4467-af1e-2ab074f6634a" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="3f96bf35-2f95-4e62-8f07-09c9b23f79ad" />
+                </propertyInstance>
+                <elementDefinition Id="bd15aac5-d316-492d-a095-49fb8499d0c7" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="1ff34a71-0a10-442d-a9e0-27b33a61a196" />
+        <ownedLiterals>
+          <enumerationLiteral Id="e21df694-9ff0-4525-a47f-55ea8d6cffbb" name="Left">
+            <referencesInternal>
+              <reference Id="a3d5d4bd-ef9f-4f95-a8d0-b480a19d8182" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DDirection Member%3DLeft" tag="ViewCode">
+                <elementDefinition Id="57e01199-69d7-4760-9c5a-ca00447f48c8" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="f16b9e75-ac12-438f-9328-103c1584328c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="1e23ed8d-67e6-4815-9a9f-adcb559a7240" name="Right">
+            <referencesInternal>
+              <reference Id="aaf03f4c-0d9a-4f44-93c5-7cd2d1fbf7f5" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DDirection Member%3DRight" tag="ViewCode">
+                <elementDefinition Id="9ce7afe6-425c-41ee-8f12-d54bce9058c0" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="7705f675-4cb1-4a7e-ab74-0cd6a2b04b71" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="2a2868a9-3d38-4d9c-b37e-faa2ffbe667a" name="Up">
+            <referencesInternal>
+              <reference Id="47da612f-f6c4-4368-9de2-f801e7e7ebbe" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DDirection Member%3DUp" tag="ViewCode">
+                <elementDefinition Id="23bcc860-5d22-431f-8535-68b5b399c46c" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="d5aaef31-ba39-41b6-a60c-f9042da8dc0d" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="20485bf8-4c87-4e1c-99d4-7f0b95745afb" name="Down">
+            <referencesInternal>
+              <reference Id="255a4551-16fb-49e3-913a-b745fccb91fc" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DDirection Member%3DDown" tag="ViewCode">
+                <elementDefinition Id="d999d55d-d760-4a76-822b-6be2d8de1b73" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="8ae188d5-eb67-4092-af77-08cd473d87bf" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="3e450d93-a8e9-4105-8f94-5d32cc73d71c" name="GameStatus" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="94de6c4d-6487-48ce-b701-275f05dd9515" handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGameStatus" tag="ViewCode">
+            <elementDefinition Id="a9100fee-71a6-4455-8767-7f4b080c7c19" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d368fadb-82f2-49f0-8c3e-59a23ee1e364" name="enum" profile="CSharpProfile">
+            <elementDefinition Id="e614b149-3956-4b92-bfaf-17f92f07208a" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="35a8f1da-fc4e-4cb1-9963-b1cd70e0303e">
+                <propertyInstance Id="cd7b85a2-4576-4707-b7c1-43a5380d0a7c" name="ClrAttributes">
+                  <elementDefinition Id="79dd0e6c-522f-4c58-9460-6ce789300482" />
+                </propertyInstance>
+                <elementDefinition Id="deb43ccd-6112-487f-8f1c-cfde67e9afcb" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8489f775-1ac7-4c07-9087-2d24e08bcdc7">
+                <propertyInstance Id="80720fed-686c-4065-997e-5f4eb8827aec" name="BaseType" value="int">
+                  <elementDefinition Id="ea3feacb-c980-4f55-84f4-9d10875f8aef" />
+                </propertyInstance>
+                <elementDefinition Id="4c811d29-7d4f-49bf-a314-6ee0b2d27588" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="47aa0cf9-1316-4fde-9a6c-04114fb8d564">
+                <propertyInstance Id="e0e05e38-19a9-4fe6-85df-c9a24a504692" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="abea162d-ab02-4380-b37d-c8a525f5516c" />
+                </propertyInstance>
+                <elementDefinition Id="2a218e6c-69d5-4ae3-ad0b-20f80542a571" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="aa66d715-c3fb-4524-9ad6-99fe7f177a26" />
+        <ownedLiterals>
+          <enumerationLiteral Id="eff2b93b-6c44-457e-a3f8-bd9711460fc7" name="ReadyToStart">
+            <referencesInternal>
+              <reference Id="74d8aedd-7aa1-4c4f-bf6f-6edd15eb8304" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGameStatus Member%3DReadyToStart" tag="ViewCode">
+                <elementDefinition Id="ccdf556c-e80a-45b8-9e4c-280f7d271965" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="72ff86ae-d09f-4bfe-a069-ceae27160083" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="53e6c9c9-4408-49cd-9caf-613cd8be80e9" name="InProgress">
+            <referencesInternal>
+              <reference Id="6da49637-0a76-47d1-b66e-88838b1e46e8" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGameStatus Member%3DInProgress" tag="ViewCode">
+                <elementDefinition Id="afd8d9c9-4618-4fd0-9478-5522c1e5e774" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="b16c7982-9a88-4950-acba-8fa57138e734" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="9f8942aa-ac72-4fd1-9521-17f70d80c7e8" name="Completed">
+            <referencesInternal>
+              <reference Id="0fc611dc-1902-4b3a-abc8-7cd51f094f20" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine Type%3DGameStatus Member%3DCompleted" tag="ViewCode">
+                <elementDefinition Id="184d59f2-5a09-4fa1-a126-2a0610f5900d" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="7b6bf5a2-0f8e-4375-8566-ad48dea9523e" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f4cdeefa-a54f-4755-a90a-f10ca29ecb3d" name="IRandomGenerator" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="3d173b32-5c9f-4994-8022-75b2b370ba74" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIRandomGenerator" tag="ViewCode">
+            <elementDefinition Id="022713c1-b954-4f41-be4d-df4ac3d569e6" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d9adf795-4800-417e-84fe-afcb9fc37301" name="interface" profile="CSharpProfile">
+            <elementDefinition Id="c7d39f56-caa5-4ad7-bc4a-9f3e0287b1ff" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="35ad7b67-66aa-47cc-a556-6d93f34ab6ad">
+                <propertyInstance Id="e065f939-a515-4202-8677-3ad557b9a4fd" name="ClrAttributes">
+                  <elementDefinition Id="42bfd158-781d-4ff4-b8e2-72d25cb77e22" />
+                </propertyInstance>
+                <elementDefinition Id="5bc34f41-e06e-4af9-94ac-3b572668092c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e3c96761-a087-4a31-a5ab-f02fbbc68aac">
+                <propertyInstance Id="5a7e6407-caac-43fe-9135-47c90fed0363" name="IsPartial" value="false">
+                  <elementDefinition Id="97729f1b-7168-441b-a6a6-814064ed8be4" />
+                </propertyInstance>
+                <elementDefinition Id="598ee1ce-330f-4ad9-8768-581563d00927" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="20305989-2ef7-4696-b0e9-55549971d10c">
+                <propertyInstance Id="75637e6c-618b-4011-9c04-410543b509e4" name="IsUnsafe" value="false">
+                  <elementDefinition Id="86d66104-88b1-459e-a153-1d0f6b5d869a" />
+                </propertyInstance>
+                <elementDefinition Id="5a9de3f8-9405-4459-b473-5a645686e165" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6d807c3d-fb4b-4dfb-89af-b11df7bfb134">
+                <propertyInstance Id="ceaba6ad-3b01-4626-90bb-441b3ba50b38" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="4bf80f4d-5400-4223-bd20-6cc6d2a0152e" />
+                </propertyInstance>
+                <elementDefinition Id="878481d1-bc12-440b-a689-bcb4dba28843" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fb550754-7627-473d-8276-a6a11cc48c1a" />
+        <targetEnds>
+          <association Id="b76c8625-db05-40f5-8e37-de2e06c01fa4" isDerived="false" sourceEndRoleName="IRandomGenerator" targetEndRoleName="Point" isLeaf="false" isAbstract="false">
+            <classMoniker Id="32109441-831a-4f0d-9a9c-f347c285f248" LastKnownName="Point" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e12da7d5-aec1-4ca1-adb4-961d045758e8" name="IRandomGenerator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e712cec9-fc9c-492f-b0d9-082084417dea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e27e1f7-ff38-40de-a65b-1589188c29b8" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1c8e0a58-4caa-4898-8f99-dfa4f2de42a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b6caa12f-434a-4263-a0b5-417a55b20e5f" />
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation Id="7ab13565-361e-48ae-93ce-fbc8414c5e21" name="Generate" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="4ea55dd0-8b4e-4b67-980d-d06cca6e022b" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DIRandomGenerator Member%3DGenerate" tag="ViewCode">
+                <elementDefinition Id="9966403a-7987-4c83-88d9-a9e0ff7587ac" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c46f23b1-efab-4cf0-b3c0-2cb98e0977c2" name="method" profile="CSharpProfile">
+                <elementDefinition Id="bd82df34-4607-4bc5-9c75-0194ada906c5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4251aaae-8ccb-4f1d-a796-849ee569cf7b">
+                    <propertyInstance Id="3f22c803-9f97-4a9a-b54a-ee6b659237ed" name="ClrAttributes">
+                      <elementDefinition Id="237a4899-596b-409c-9205-1fdd53a50ac0" />
+                    </propertyInstance>
+                    <elementDefinition Id="88152721-5042-432e-b0cc-abffeb1805a1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5fa1104f-0e25-4474-8db7-935763453b7b">
+                    <propertyInstance Id="fbafc6aa-b12d-4f12-a050-93bb6b5c3248" name="IsPartial" value="false">
+                      <elementDefinition Id="9ad2fd7f-da28-47b1-9a48-380bebb2c4a0" />
+                    </propertyInstance>
+                    <elementDefinition Id="74e984c9-dda5-4c9f-b5f3-7caf9110e0c5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f3f1ef47-3d79-4b90-9165-409dd0c7bbf0">
+                    <propertyInstance Id="8c74b4ba-4aa7-4833-94a3-8940c52314ab" name="IsUnsafe" value="false">
+                      <elementDefinition Id="8e020527-d334-4546-9752-d0a10fba5fc7" />
+                    </propertyInstance>
+                    <elementDefinition Id="a74510ac-c6f3-4603-a210-87feb3e836cf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ea62858-956a-446a-9d63-4178200df3a0">
+                    <propertyInstance Id="2e69d0d8-5e3d-49e0-be81-e176d3ec6871" name="Inheritance" value="none">
+                      <elementDefinition Id="773105c2-4958-4a05-9942-5cf7293e3650" />
+                    </propertyInstance>
+                    <elementDefinition Id="cae86cca-abdd-4253-b966-78d50cd77762" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6bf0891f-2e63-4c22-b0cb-7258725009c7">
+                    <propertyInstance Id="014a72a4-65b3-4488-bc54-46c17a297878" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9cf3f9ab-f829-4d78-82fa-bdfddbd7dddf" />
+                    </propertyInstance>
+                    <elementDefinition Id="eab091cc-a670-4785-8200-9ac6bda903d2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dafbb2b9-9b24-4791-bb77-cba8c756298f">
+                    <propertyInstance Id="a8ae0b23-caeb-41be-a3cf-435c4b4be0ac" name="params" value="false">
+                      <elementDefinition Id="845a6603-69c8-43f6-8aa2-e97c4bbe0eca" />
+                    </propertyInstance>
+                    <elementDefinition Id="b1ce0905-efde-4424-866a-f3895a461f5e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="197a02cc-bfe6-4ced-866d-9dfd4b8d4ac0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cc7aa071-982c-4f58-9429-3745fb4dd20b" direction="Return">
+                  <elementDefinition Id="971a328c-eacd-4aa0-a482-36a30fa40c8d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c679ddf1-71fa-48f9-bc46-a0df6cf5f734" LastKnownName="Point" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="32109441-831a-4f0d-9a9c-f347c285f248" name="Point" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="89b05b36-49fc-4118-bbe8-503ed11bcc3a" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DPoint" tag="ViewCode">
+            <elementDefinition Id="f1db93ff-8aed-4ce7-8cc2-b3f4bdb8ca0b" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="f25600a1-2fd7-4af4-b588-11ba702e411c" name="class" profile="CSharpProfile">
+            <elementDefinition Id="4c28c499-64bd-4a0c-8b90-35e2806dcb5f" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6892ac76-04aa-4cfa-8fad-6f7d0d860c2b">
+                <propertyInstance Id="6392d462-1f4d-4181-9911-55cea3e736fd" name="ClrAttributes">
+                  <elementDefinition Id="376e8da8-e374-4ecd-9296-d2d8496af3d4" />
+                </propertyInstance>
+                <elementDefinition Id="e992eb1c-5f09-49c2-90bd-e5307ed06ee1" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="97af2dd8-3bd4-49aa-bcd4-0370db98e199">
+                <propertyInstance Id="5fb8185c-5db2-4084-8d38-9a035587dfbc" name="IsPartial" value="false">
+                  <elementDefinition Id="34b545bd-ddd8-4a71-890b-32fe639966e8" />
+                </propertyInstance>
+                <elementDefinition Id="436ac23c-5ffe-40e2-a656-55a1be69a37c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1d6f1b88-cf11-4ca6-a825-089f4063add8">
+                <propertyInstance Id="6350d394-94ee-4950-8ca9-8baecd7c9726" name="IsStatic" value="False">
+                  <elementDefinition Id="64233d5b-6f50-4416-a36f-fc516a4f8dbd" />
+                </propertyInstance>
+                <elementDefinition Id="cdcda9dc-d70f-4b76-88af-85fa1e378c61" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7166a305-8e02-4c8c-be2c-e0fbebc701cd">
+                <propertyInstance Id="39943118-b039-411f-a3ab-35697995a020" name="IsUnsafe" value="false">
+                  <elementDefinition Id="caabf7bc-8cfd-43c1-96df-39626c545e1e" />
+                </propertyInstance>
+                <elementDefinition Id="f449de06-967b-4835-8bba-96824a5a887d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3f8b55d4-7d85-4b82-96bb-62c122472369">
+                <propertyInstance Id="a05ffe08-4821-4011-bf57-cd4f56f96b8b" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="89b8547a-476c-4877-9134-9a036402b5bb" />
+                </propertyInstance>
+                <elementDefinition Id="f4f6d393-5dcf-43ae-be87-0a5c7cfc129e" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="306dbdfe-f5e2-476a-ae27-4e95426e0b23" />
+        <ownedAttributesInternal>
+          <property Id="32b963a9-d99c-493d-bdf4-0b2bb94641e3" name="X" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="8375106f-5518-4e4e-8be5-50dafb96df1d" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DPoint Member%3DX" tag="ViewCode">
+                <elementDefinition Id="ee5c7e0a-7d06-4bad-ba6b-e4867972409f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ac17f2cd-2827-458b-9a5c-13ada3f83188" name="property" profile="CSharpProfile">
+                <elementDefinition Id="bb7ddc8c-a20d-4135-b1fe-6f6ff17c0845" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6a854b2f-f0af-44f5-8da7-cd999ea5228f">
+                    <propertyInstance Id="eef2999e-9d37-45f3-8323-3df1f8bbbedd" name="ClrAttributes">
+                      <elementDefinition Id="71a541f5-5956-4da2-91e0-634332189723" />
+                    </propertyInstance>
+                    <elementDefinition Id="9669c87d-3677-4698-9d35-19b433cef1a3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d396b29f-a0a3-4d11-b3a1-3b287361008a">
+                    <propertyInstance Id="5aca74f9-63db-4fd4-95ad-aa190315d2a9" name="Get" value="public">
+                      <elementDefinition Id="30a53965-4535-48e0-a1e2-5090fbd534de" />
+                    </propertyInstance>
+                    <elementDefinition Id="864fdd51-97ba-4f4a-bdc0-42caa876f37f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="24fc2602-f24c-4c34-97d9-9b074b45802e">
+                    <propertyInstance Id="92bd616d-d923-47ce-9554-707341c1c473" name="HasBody" value="false">
+                      <elementDefinition Id="c9763a82-e9fd-4901-a9fe-298f33ac411a" />
+                    </propertyInstance>
+                    <elementDefinition Id="3fe53907-7ccf-45f8-913a-c60a64a1aea1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8045648e-617f-46d9-95f1-1e22bf686b03">
+                    <propertyInstance Id="0eb60262-eeef-4455-97ca-5be3f0874b3b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="201d49eb-b851-4d69-a1bd-e9365de09c08" />
+                    </propertyInstance>
+                    <elementDefinition Id="7e605bb5-0632-44e3-9ebb-c2f812896a70" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8d8d1e82-282b-4371-8b5b-1cd761166f90">
+                    <propertyInstance Id="2f5f1484-27e9-4f8d-befd-42365bf90a86" name="Inheritance" value="none">
+                      <elementDefinition Id="12121bea-c060-4e70-8af5-3378e13e5b94" />
+                    </propertyInstance>
+                    <elementDefinition Id="9085c768-8053-404d-8872-2de6dbbc5c1b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="06f542d5-2372-47ec-ac2b-b06efcd94447">
+                    <propertyInstance Id="bc41d4d2-eac3-417d-a1dd-a69496d5b066" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="52cb2d6c-eb89-4d58-926d-550bf05f8f85" />
+                    </propertyInstance>
+                    <elementDefinition Id="7815948a-01b1-418d-acc3-d63372890269" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c4901b07-9b0b-4711-93dd-fdf0ef835e9c">
+                    <propertyInstance Id="89e24b95-5f0d-43d3-9e18-e3527b11e81e" name="Set" value="public">
+                      <elementDefinition Id="161a36bd-faae-48bb-93a9-c11ad428f0d4" />
+                    </propertyInstance>
+                    <elementDefinition Id="cc98f356-be04-4f19-b5ad-4230d65a0813" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ea9e8164-34d4-4dca-b5ec-4aaf685e8e3c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="e78e744c-504d-457a-bffa-2710e13e82fd" name="Y" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="64f9cd63-9f7a-4d3b-9a07-e0b50c21ab90" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DPoint Member%3DY" tag="ViewCode">
+                <elementDefinition Id="5880b7ef-df92-4e90-a7b1-b25e3dcf87fb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="aebc667b-09d0-44e2-a1a9-644d01046c63" name="property" profile="CSharpProfile">
+                <elementDefinition Id="ff32da66-f428-43e6-85a1-84b9846cf5c5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4d597d8a-2710-443e-bdc0-0f026f523d9a">
+                    <propertyInstance Id="ed638f5b-0df7-4cac-9c41-564756d2af85" name="ClrAttributes">
+                      <elementDefinition Id="c0c68a9e-21f6-4697-9c4d-c983228c69c1" />
+                    </propertyInstance>
+                    <elementDefinition Id="2acb936d-66e8-4148-889b-899363e83632" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2e8bc519-1b12-4a33-a35e-d3741c846064">
+                    <propertyInstance Id="68106c48-4c81-480d-bf81-051ab197d687" name="Get" value="public">
+                      <elementDefinition Id="e37a3131-f2f6-4df5-b12b-0ef9b4d1c279" />
+                    </propertyInstance>
+                    <elementDefinition Id="8fc54b05-fa69-4d5a-8413-cd8f03f0b2fd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0aa0d0f-a78e-4e04-8ecb-e1bbe0f665b7">
+                    <propertyInstance Id="2f812826-8ba3-4ab1-b8f8-dbe81aa070d4" name="HasBody" value="false">
+                      <elementDefinition Id="9248696b-f6ae-4dba-973c-74f6b969a96d" />
+                    </propertyInstance>
+                    <elementDefinition Id="33a666aa-c29d-4849-bf30-c62b2bb5a019" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4e398405-6ce1-4c13-967a-31ee609fc36d">
+                    <propertyInstance Id="796cbc56-0f94-442d-8b40-5951517b7e2d" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c907f5da-5127-48d8-b851-0bfd1dfe39c9" />
+                    </propertyInstance>
+                    <elementDefinition Id="846581df-f6e5-4b39-8c71-ee3ffb81219b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9c6781ad-1991-4cbd-ac03-5dfe3ff06565">
+                    <propertyInstance Id="67c7a179-0d93-4d2c-a175-9376caac1382" name="Inheritance" value="none">
+                      <elementDefinition Id="e10d038a-0797-4adf-8374-e97c8040a20d" />
+                    </propertyInstance>
+                    <elementDefinition Id="db1a2784-97f4-44d4-b26a-47d03918d6e7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="da2750a2-809a-48a1-96af-7cfcf18cc584">
+                    <propertyInstance Id="c55ad757-3545-4711-818c-44ace189a473" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b3749c99-b201-41b3-86a9-72ea4891720e" />
+                    </propertyInstance>
+                    <elementDefinition Id="9a1f4499-dfca-4a3b-98af-ac887b9cc877" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="edaa7d1a-e977-4fd1-beb1-d342562d855e">
+                    <propertyInstance Id="fbfcb5e3-b9eb-47e7-9017-e406a3c777c8" name="Set" value="public">
+                      <elementDefinition Id="8815e613-416a-4a1b-b164-9ca7085b4d9a" />
+                    </propertyInstance>
+                    <elementDefinition Id="fb9569fa-0b11-4bac-9fad-85e5e1115671" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="a595522b-67f7-446f-84c2-d62c904198ab" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6f9c3b3e-a81d-4297-a232-1679d410be36" name="Point" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="a02d2e14-57ac-4fb4-85dd-a84835be5de4" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DPoint Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])" tag="ViewCode">
+                <elementDefinition Id="1cffeec6-7b29-48ac-95c6-789633cffc92" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e212fd8c-6ec1-4f17-b529-5a68afcaf202" name="method" profile="CSharpProfile">
+                <elementDefinition Id="19ee17e0-075b-4851-bb95-902117bf63a3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2bedf6dd-0fd2-4919-b1bc-c93c3504fb69">
+                    <propertyInstance Id="19cb38db-c12f-4d4a-88de-196d24e8c27b" name="ClrAttributes">
+                      <elementDefinition Id="56c9ff86-81ff-4fa2-aa2a-1ca975d833c2" />
+                    </propertyInstance>
+                    <elementDefinition Id="a6d6f3fb-65f9-4257-a74b-7a0ef135dbd8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8cd055cd-8fee-470c-aaef-1ea657090164">
+                    <propertyInstance Id="7745cfeb-4627-402e-a887-1e483e31ca7c" name="IsPartial" value="false">
+                      <elementDefinition Id="ed9caee3-44f7-449b-b81a-e340c3b04a9a" />
+                    </propertyInstance>
+                    <elementDefinition Id="acca27ab-1fff-48a3-b3da-6e4ae82de78d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1568f6d4-af10-4df4-9737-d7ed6c110516">
+                    <propertyInstance Id="eef7a950-3dcc-4c58-8917-061a627db747" name="IsUnsafe" value="false">
+                      <elementDefinition Id="7d3daa8a-7bb3-4433-8703-05c057b585a3" />
+                    </propertyInstance>
+                    <elementDefinition Id="dc3e45e9-6c35-48f0-a76d-9d3440d9bc0b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3d28e97b-4e41-4888-a271-ab2f5daa94b3">
+                    <propertyInstance Id="ca019a13-7593-4409-aa7f-4999d8f1efb4" name="Inheritance" value="none">
+                      <elementDefinition Id="9e0b06ed-9e20-4dab-b2bb-dcc613fdc543" />
+                    </propertyInstance>
+                    <elementDefinition Id="b8310372-1f14-4237-ae62-59022fc6835f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="07e677d3-5774-451f-98d3-a0d864183674">
+                    <propertyInstance Id="a53d9a55-a048-4324-a3b3-b5e88886ddb3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="bf93857b-658f-48ac-8760-713ac098fd8d" />
+                    </propertyInstance>
+                    <elementDefinition Id="7938a0fb-807d-4a3a-a0f4-ecc3ab102b99" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="87a121e9-5179-411b-b15a-355b0b1d5384">
+                    <propertyInstance Id="94de23e7-5acf-45f7-892c-af003211b893" name="params" value="false">
+                      <elementDefinition Id="6cc8ce27-e6a7-4d22-8e2c-266d828083be" />
+                    </propertyInstance>
+                    <elementDefinition Id="d6c62823-c104-4a67-8025-3879feb17b50" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="dc85b3b7-5146-4db8-9202-b3c4ef4e2737" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="43f02f1b-0e2e-4d20-bec7-6566ee0dda72" name="x" direction="In">
+                  <referencesInternal>
+                    <reference Id="a6749b5e-8bf4-459e-84e1-2e25a2a25344" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DPoint Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dx" tag="ViewCode">
+                      <elementDefinition Id="9c8030d4-043a-4171-8f03-14305de09002" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="63e4e7d6-bb57-4e3e-9f4f-97504f0a4304" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c5810876-55b4-4df7-bba8-b2f607426b99" name="y" direction="In">
+                  <referencesInternal>
+                    <reference Id="e96506d2-6af5-48b5-b904-6abfec6edda4" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DPoint Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dy" tag="ViewCode">
+                      <elementDefinition Id="d779ae74-0cbd-4559-ac9a-c41b482f2023" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="5c8e31ce-513e-4ed6-8679-bd00e58274a1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f25ed5ba-eeff-43a1-a2bc-5e4e9213a7ed" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b87e3d7-b226-4a84-b18e-10faee0aa499" name="Snake" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="825ddff3-d701-445f-8663-3cd048859a30" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DSnake" tag="ViewCode">
+            <elementDefinition Id="022c6ef6-e9b1-4bcd-8542-8bd9dd16c6bc" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="49504b32-97a0-4cde-b638-515267741b50" name="class" profile="CSharpProfile">
+            <elementDefinition Id="083608a2-758d-4496-a5e6-0465fc4be0ea" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="37944537-c344-48fb-8ff2-453fcba0021f">
+                <propertyInstance Id="c9b28260-a42b-454e-a580-d9ab87df1c2d" name="ClrAttributes">
+                  <elementDefinition Id="a5370d1d-37e4-4b8d-b957-19ca1522003b" />
+                </propertyInstance>
+                <elementDefinition Id="da08def7-afe6-49ea-ba1b-2ccad481a5f4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="46b9b351-fd48-45ea-aa7e-af5de33c9e7d">
+                <propertyInstance Id="84384496-7540-47dc-bf14-096764b018a8" name="IsPartial" value="false">
+                  <elementDefinition Id="9ab668f8-7fd3-4441-be37-bacdd8020e34" />
+                </propertyInstance>
+                <elementDefinition Id="d1248278-abaa-4a27-92e9-f448f1ec023f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="51668d21-0e30-47d9-a06b-1505f15930ea">
+                <propertyInstance Id="840c7c4a-2355-40c0-a034-f2d5de1efb91" name="IsStatic" value="False">
+                  <elementDefinition Id="e97f166a-8012-4b42-83e2-f67419ddd2c7" />
+                </propertyInstance>
+                <elementDefinition Id="371be09e-9f00-42bc-9661-9e52b4aaac67" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3b963302-ec21-48bd-aaac-0bbea7388042">
+                <propertyInstance Id="191814b2-58c5-4f15-aa4c-7c61b4cd19c5" name="IsUnsafe" value="false">
+                  <elementDefinition Id="7a3750d4-53b4-41d0-b80b-7580e0a1b54c" />
+                </propertyInstance>
+                <elementDefinition Id="d44213d4-d45f-47c3-b2e0-81d813ef5c43" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e29f2108-c164-4bf2-ba34-307b6e8f982e">
+                <propertyInstance Id="f99be5fa-c732-44e5-9fad-c7f748339c04" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="26b9ec8f-1d63-4127-b3a4-37a2b20a83b5" />
+                </propertyInstance>
+                <elementDefinition Id="d1b6bd56-27a3-4fc6-8e8a-fb53d6b060e0" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="ed60cba4-b4ab-466a-b9e7-6cd03770b715" />
+        <targetEnds>
+          <association Id="d68ce52d-5633-4429-8787-b18c7005a521" isDerived="false" sourceEndRoleName="Snake" targetEndRoleName="Point" isLeaf="false" isAbstract="false">
+            <classMoniker Id="32109441-831a-4f0d-9a9c-f347c285f248" LastKnownName="Point" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db7967fc-3170-4c00-87c9-207c876a3407" name="Snake" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="eeb4e88a-89a6-48a6-8faf-8a8db10adf06" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f8f809f-a8e5-4db6-89c6-e60762c94f18" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0a31e7d5-a08f-4781-9c3a-d0d641870075" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5ea9f075-7b77-45aa-a77c-1f2ce31ad8f4" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a1a0fa4c-9bc8-4ab3-8d63-b3b4eede4168" name="Body" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="7206739c-5e8a-4cd5-92a2-21f1548c4be8" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DSnake Member%3DBody" tag="ViewCode">
+                <elementDefinition Id="676264e2-c021-4c08-9ca6-c023fad68af3" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="22890401-9cf8-4a66-930d-aa00ec598a2c" name="property" profile="CSharpProfile">
+                <elementDefinition Id="881c4ba8-d2cd-4035-b2e8-9a774e456d14" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ac06da08-aabc-4012-a4ce-f23ee243dc5f">
+                    <propertyInstance Id="3053ef74-db65-4f23-99b7-95ce583fdaa1" name="ClrAttributes">
+                      <elementDefinition Id="781e7153-ff18-4890-8e1e-a101a00f9415" />
+                    </propertyInstance>
+                    <elementDefinition Id="10725954-897e-419c-bf28-f0ec50b6188b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ca036d4b-341e-4038-9026-8f1477714ebc">
+                    <propertyInstance Id="0de99d51-40b5-4e7c-92f8-ef8b810229d1" name="Get" value="public">
+                      <elementDefinition Id="a7c3d3fb-7abc-4e70-bc8c-4795bee0b1ce" />
+                    </propertyInstance>
+                    <elementDefinition Id="e457d4fd-e35e-4437-85e8-964e52a7ed15" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="62cf1d94-802e-492a-abd3-0312084cdb44">
+                    <propertyInstance Id="7c91e38b-0a00-4d6d-9f71-a1670bb40f57" name="HasBody" value="false">
+                      <elementDefinition Id="7c28ab4a-0293-4007-9d12-8800103e6146" />
+                    </propertyInstance>
+                    <elementDefinition Id="4f1107db-51f0-4032-9b7c-36127a74cc80" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="49a22a2e-3a36-45fd-a2e3-39949832acd3">
+                    <propertyInstance Id="56a6a4b1-9b61-4d3f-9943-ed991feb76ac" name="IsUnsafe" value="false">
+                      <elementDefinition Id="aca7d41d-b958-4103-b29d-4523a862fbcf" />
+                    </propertyInstance>
+                    <elementDefinition Id="65906309-7f44-41b9-8914-49de2feb472b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e23d6bc7-5b96-4fdc-a1c7-5394795d3dca">
+                    <propertyInstance Id="92e2892d-9261-49b2-afef-66b7c190f54b" name="Inheritance" value="none">
+                      <elementDefinition Id="236d7c1c-39d7-47e2-973d-02ea0534cea3" />
+                    </propertyInstance>
+                    <elementDefinition Id="6a23f522-fc4f-47ff-afcd-63ea5d5ff4a6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6f928bee-87cb-4b31-a064-81059336444a">
+                    <propertyInstance Id="b6b09096-5c5c-46f9-89fe-f9474c60cb4a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="5ca33dc5-dd02-4d2f-86f2-29d7e35a134e" />
+                    </propertyInstance>
+                    <elementDefinition Id="ad4489ac-6f34-4c59-8964-dca99ed217c4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="10648af0-cfcc-48e5-a810-203dea26ff7c">
+                    <propertyInstance Id="c2fb024b-d454-460e-9cd7-ec484f1781df" name="Set" value="public">
+                      <elementDefinition Id="4a7db9ad-e847-4939-bd56-f2e475d4826b" />
+                    </propertyInstance>
+                    <elementDefinition Id="a0f6d4da-0f58-447d-82e8-4635a435a238" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="443cd78f-8467-4739-b047-28cc2b6bae14" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="808c8f5b-468e-4918-b850-1d9ccab9d2e1" LastKnownName="List&lt;Point‎&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="656d0c35-5041-4379-a9c1-3e28a57c0d7a" name="Snake" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="a343632a-dd1b-48c7-bfaf-52c3b91702f3" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender%2FSnakeDefender.GameEngine%2Fbin%2FDebug%2FSnakeDefender.GameEngine.dll Namespace%3DSnakeDefender.GameEngine.GameObject Type%3DSnake Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="651bad53-6f0f-4acb-8a58-f393e67d68c6" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1ff690e4-435a-4bb2-816d-2a6e1e561af3" name="method" profile="CSharpProfile">
+                <elementDefinition Id="434933d9-adca-45d6-84e6-b7335728b5e0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ef2f8c09-69f7-4ef3-9ada-4877f5c940a2">
+                    <propertyInstance Id="ab4616e1-de84-4e68-9e1c-fb40213aadc0" name="ClrAttributes">
+                      <elementDefinition Id="50aa4201-7cff-4f29-9178-01cfa87cfa2c" />
+                    </propertyInstance>
+                    <elementDefinition Id="7b69f53b-61b8-4401-9f46-d92ac7170efe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="92e5a0f9-4fb1-4a9e-8256-3857da7cec8c">
+                    <propertyInstance Id="9a848cf3-6b05-4876-8503-3b29e1ee1cbf" name="IsPartial" value="false">
+                      <elementDefinition Id="b412aa43-d781-48ba-baf8-81a9f554f0ff" />
+                    </propertyInstance>
+                    <elementDefinition Id="1be05108-5368-42a4-a84d-6ca99507fbd0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9a9a457c-43db-4c34-8c7c-3db3556a17c2">
+                    <propertyInstance Id="97469e91-0db2-47d5-994b-1c32dec5d8cb" name="IsUnsafe" value="false">
+                      <elementDefinition Id="477469a2-7af6-4d49-8773-457f672e0ebb" />
+                    </propertyInstance>
+                    <elementDefinition Id="28bc5eee-d7f4-4b28-bfa7-6634e469018b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1f560a5b-0274-4d30-aeb6-73b6954d05e0">
+                    <propertyInstance Id="7f4b8f0d-11cf-4f17-9fbc-c334d80daa19" name="Inheritance" value="none">
+                      <elementDefinition Id="3f6cbabf-bbb1-4d31-8372-e76ec1a810d2" />
+                    </propertyInstance>
+                    <elementDefinition Id="e7d75b47-cff2-4a7d-80c4-581d8d305dd1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cb8a5045-8ec4-492f-896a-a4f8621c50fe">
+                    <propertyInstance Id="ae16a411-5dfe-4c59-9288-c3758b7913d5" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a08d4810-9d7d-4591-b241-bb611550326f" />
+                    </propertyInstance>
+                    <elementDefinition Id="3dbc5728-b9f7-45bf-b3f7-3a35ff9794cc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ad8e14d8-bef9-4587-a43c-232bdd9fd362">
+                    <propertyInstance Id="f9904342-203d-402e-9fc4-db4a019ac4da" name="params" value="false">
+                      <elementDefinition Id="5c07a8d1-cad0-4901-9049-8a897efd0b13" />
+                    </propertyInstance>
+                    <elementDefinition Id="19ead68c-9389-4374-8891-9caeed731323" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e0cdeca6-70c6-4580-a88f-76cc4271bab7" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="03cbbbc6-3396-4f01-8a88-4e5f431ca5f6" name="SnakeDefender.GameEngine.Modeling">
+    <elementDefinition Id="ba347852-8057-4c32-aac2-9ad4b728fe83" />
+  </package>
+</logicalClassDesignerModel>
