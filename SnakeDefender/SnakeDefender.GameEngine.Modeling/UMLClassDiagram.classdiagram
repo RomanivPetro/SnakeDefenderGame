@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4ee37b72-9ec5-4c9e-b2a7-beb6f7475831" name="UMLClassDiagram" linkedPackageId="03cbbbc6-3396-4f01-8a88-4e5f431ca5f6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="e41d8d9c-1d2f-4ca4-abea-85e95910a515">
-      <profileInstance Id="4a9e53af-3317-4231-963c-a9c2c7366232" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="ff9944cb-d6c4-4f74-a3da-7c7f46334ca6">
-      <profileInstance Id="530ae352-bb80-4a27-95bc-7fdd833318a4" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="308e66f7-f59d-40c0-ac62-5e19659fb8b9">
-      <profileInstance Id="84e4756a-a4a0-4156-8473-346f08527d20" name="CSharpProfile">
-        <elementDefinition Id="5e34750c-2e27-4688-8d75-a5d2c14ebaee" />
-      </profileInstance>
-      <elementDefinition Id="063465d0-6643-40d9-b781-8d3941cdb073" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="7e1c9e43-37f8-4825-9894-7c32989b3cd0" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -2270,21 +2250,31 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="ed60cba4-b4ab-466a-b9e7-6cd03770b715" />
         <targetEnds>
-          <association Id="d68ce52d-5633-4429-8787-b18c7005a521" isDerived="false" sourceEndRoleName="Snake" targetEndRoleName="Point" isLeaf="false" isAbstract="false">
+          <association Id="1a17c6ba-fb4c-4216-8dd6-97c49473cb91" isDerived="false" sourceEndRoleName="Snake" targetEndRoleName="Point" isLeaf="false" isAbstract="false">
             <classMoniker Id="32109441-831a-4f0d-9a9c-f347c285f248" LastKnownName="Point" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="db7967fc-3170-4c00-87c9-207c876a3407" name="Snake" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="eeb4e88a-89a6-48a6-8faf-8a8db10adf06" />
+                <memberEnd Id="d58dd8b4-d9c7-4feb-a2c1-9de53a72ab4e" name="Snake" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="642c04df-bb35-44ed-bed3-d0696f29ad42" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="3f8f809f-a8e5-4db6-89c6-e60762c94f18" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="0a31e7d5-a08f-4781-9c3a-d0d641870075" />
+                <memberEnd Id="da7c2c5c-7df7-4598-9070-f7b70c65baae" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="a52dd9e6-fae9-4ea2-b799-f85dde8cd108" name="Lower" value="*">
+                      <elementDefinition Id="bd24eebd-501e-4c30-9b15-80ca98f3b0d8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9b266585-07b0-423d-befb-1bc7c761dcee" name="Upper" value="*">
+                      <elementDefinition Id="eda3f0e2-7b6b-435f-87d5-e89169ed84a3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c7bfb371-886c-4204-acf7-6acce7e6f9fa" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5ea9f075-7b77-45aa-a77c-1f2ce31ad8f4" />
+            <elementDefinition Id="c7895471-ed78-46c3-ba46-8b5ae18b3ccd" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -2407,5 +2397,25 @@
   </packagedElements>
   <package Id="03cbbbc6-3396-4f01-8a88-4e5f431ca5f6" name="SnakeDefender.GameEngine.Modeling">
     <elementDefinition Id="ba347852-8057-4c32-aac2-9ad4b728fe83" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e41d8d9c-1d2f-4ca4-abea-85e95910a515">
+        <profileInstance Id="4a9e53af-3317-4231-963c-a9c2c7366232" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ff9944cb-d6c4-4f74-a3da-7c7f46334ca6">
+        <profileInstance Id="530ae352-bb80-4a27-95bc-7fdd833318a4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="308e66f7-f59d-40c0-ac62-5e19659fb8b9">
+        <profileInstance Id="84e4756a-a4a0-4156-8473-346f08527d20" name="CSharpProfile">
+          <elementDefinition Id="5e34750c-2e27-4688-8d75-a5d2c14ebaee" />
+        </profileInstance>
+        <elementDefinition Id="063465d0-6643-40d9-b781-8d3941cdb073" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
