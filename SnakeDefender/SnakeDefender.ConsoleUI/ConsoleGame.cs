@@ -45,7 +45,6 @@ namespace SnakeDefender.ConsoleUI
         public void StartGame()
         {             
             this._game.Start();      
-            // MR: зайвий пробіл
              DrawField();
             // MR: треба було підключити using System.Timers
             this._gameTimer = new System.Timers.Timer(this._game.Speed);
