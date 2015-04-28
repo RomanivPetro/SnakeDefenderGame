@@ -11,10 +11,12 @@ namespace SnakeDefender.ConsoleUI
     {
         #region Private fields
 
+        // MR: змінну варто назвати відповідно до назви класу _settingsReader
         private SettingsReader _gameSettings;
         private RandomGenerator _randomGenerator;
         private Game _game;
-        private System.Timers.Timer _gameTimer;        
+        private System.Timers.Timer _gameTimer;
+        // MR: зайвий символ підкреслення _
         private ConsoleKeyInfo _key_info;
 
         #endregion
@@ -42,8 +44,10 @@ namespace SnakeDefender.ConsoleUI
         #region Public Methods
         public void StartGame()
         {             
-            this._game.Start();           
+            this._game.Start();      
+            // MR: зайвий пробіл
              DrawField();
+            // MR: треба було підключити using System.Timers
             this._gameTimer = new System.Timers.Timer(this._game.Speed);
             this._gameTimer.Elapsed += new ElapsedEventHandler(RunningGame);
             this._gameTimer.Enabled = true;
@@ -54,11 +58,14 @@ namespace SnakeDefender.ConsoleUI
         #endregion
 
         #region Private Methods
+        // MR: відповідна назва OnTimerTick чи OnTimerElapsed
         private void RunningGame(object source, ElapsedEventArgs e)
         {
             if (this._game.Status != GameStatus.Completed)
             {
                 this._game.Move();
+                // MR: незрозуміло для чого ще одна перевірка, еквівалентна попередній
+                //     без неї всі тести зелені + гра йде без вильотів чи багів
                 if (this._game.Status != GameStatus.Completed)
                 {
                     DrawMoving();
@@ -67,6 +74,7 @@ namespace SnakeDefender.ConsoleUI
             }
             else
             {
+                // MR: цей блок коду варто винести в окремий метод CompleteGame()
                 Console.SetCursorPosition(0, this._gameSettings.GameBoardHeight + 3);
                 ConsoleColor color = Console.ForegroundColor;
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -75,6 +83,7 @@ namespace SnakeDefender.ConsoleUI
                 Console.ForegroundColor = color;
             }
         }
+        // MR: занадто великий метод; всі дії потрібно винести в окремі методи TryChangeDirectionRight() і т.д. або якось інакше
         private void GameControl()
         {
             while (this._game.Status != GameStatus.Completed)
@@ -118,6 +127,7 @@ namespace SnakeDefender.ConsoleUI
         }
         private void Pause()
         {
+            // MR: while(true) - погана практика
             while (true)
             {
                 this._key_info = Console.ReadKey();
@@ -131,6 +141,7 @@ namespace SnakeDefender.ConsoleUI
         }
 
         #region Drawing
+        // MR: можна порозбивати цей метод на кілька менших DrawFood(), DrawHead(), DrawTail(), ShowScore()
         private void DrawMoving()
         {
             Console.SetCursorPosition(this._game.Food.X, this._game.Food.Y);

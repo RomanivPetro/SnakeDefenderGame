@@ -4,6 +4,7 @@ using System.IO;
 
 namespace SnakeDefender.ConsoleUI.AdditionalClasses
 {
+    // MR: невдала назва класу, так як має бути іменником
     public class ResultsProcessing
     {
         #region Public Property
@@ -17,6 +18,11 @@ namespace SnakeDefender.ConsoleUI.AdditionalClasses
         }
 
         #region Public Methods
+        // MR: дубляж коду додавання рахунку в XML файл
+        //
+        //     Console.WriteLine("Write your name: ");
+        //     string name = Console.ReadLine();
+        //     Serialization(AddScore(point, name));
         public void CheckResult(int point)
         {
             if (File.Exists("Results.xml"))

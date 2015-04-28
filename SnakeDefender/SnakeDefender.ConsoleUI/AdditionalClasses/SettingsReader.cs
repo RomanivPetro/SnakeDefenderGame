@@ -28,6 +28,7 @@ namespace SnakeDefender.ConsoleUI.AdditionalClasses
         #region Public Methods
         public void ReadFromConfig()
         {
+            // MR: можливо варто було зробити якусь перевірку чи конвертація пройде
             GameBoardWidth = Convert.ToInt32(ConfigurationManager.AppSettings["Width"]);
             GameBoardHeight = Convert.ToInt32(ConfigurationManager.AppSettings["Height"]);
             GameSpeed = Convert.ToInt32(ConfigurationManager.AppSettings["Speed"]);

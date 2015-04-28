@@ -8,6 +8,7 @@ namespace SnakeDefender.ConsoleUI
     {            
         static void Main(string[] args)
         {
+            // MR: змінну варто назвати відповідно до назви класу
             var resultsAnalysis = new ResultsProcessing();
 
             Console.WriteLine("Snake Defender");
@@ -21,6 +22,7 @@ namespace SnakeDefender.ConsoleUI
                     var game = new ConsoleGame();
                     game.StartGame();
                     // when Game Over
+                    // MR: винести в окремий метод GameOver()
                     Console.WriteLine("Your score --> {0}",game.Score);
                     resultsAnalysis.CheckResult(game.Score);
                     resultsAnalysis.ShowResults();
