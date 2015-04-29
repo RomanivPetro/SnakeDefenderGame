@@ -4,6 +4,10 @@ using SnakeDefender.GameEngine;
 
 namespace SnakeDefender.ConsoleUI
 {
+    // MR: Після закінчення гри часто буває наступний баг: рахунки виводяться поверх поля гри
+
+    // MR: Виявлено інший баг: якщо напрямок руху змійки == Down, то при швидкому натисканні Right а потім Up
+    //     змійка з'їдає саму себе, чого бути не має, і в результаті бачимо Game Over
     class GameStart
     {            
         static void Main(string[] args)

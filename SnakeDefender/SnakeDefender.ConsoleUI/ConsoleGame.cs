@@ -7,6 +7,9 @@ using GameStatus = SnakeDefender.GameEngine.GameStatus;
 
 namespace SnakeDefender.ConsoleUI
 {
+    // MR: Цей клас має бути тільки wrapper'ом для класу Game
+    //     Timer, RandomGenerator, Settings мають бути в класі Game, бо це відноситься до логіки гри
+    //     ConsoleGame - лише графічне представлення + controls
     class ConsoleGame
     {
         #region Private fields

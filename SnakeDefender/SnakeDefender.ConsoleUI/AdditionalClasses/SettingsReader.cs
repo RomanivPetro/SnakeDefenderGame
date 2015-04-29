@@ -5,6 +5,13 @@ using SnakeDefender.GameEngine.GameObject;
 
 namespace SnakeDefender.ConsoleUI.AdditionalClasses
 {
+    // MR: судячи з назви SettingsReader мав би тільки зчитувати дані з config
+    //     запам'ятовувати їх мав би окремий клас GameSettings : IGameSettings
+    //     АБО
+    //     SettingsReader перейменувати в GameSettings і реалізувати в ньому окремий метод ReadConfig()
+    //
+    // MR: в AppConfig не мають зберігатися дані про саму гру, наприклад швидкість чи розмір
+    //     AppConfig має зберігати дані лише для репрезентації консольної аплікації, наприклад розмір вікна консолі і т.д.
     public class SettingsReader : IGameSettings
     {
         #region Public Property

@@ -3,6 +3,7 @@ using SnakeDefender.GameEngine.GameObject;
 
 namespace SnakeDefender.ConsoleUI.AdditionalClasses
 {
+    // MR: цей клас мав би бути в GameEngine
     public class RandomGenerator : IRandomGenerator
     {
         #region Private fields

@@ -24,7 +24,15 @@ namespace SnakeDefender.GameEngine
     #endregion
     public class Game
     {
-        // MR: по всьому проекту між методами часто немає пустої лінійки, де не де зайві пусті лінійки і т.д., що є порушенням code convention
+        // MR: по всьому проекту між методами часто немає пустої лінійки, 
+        // де не де зайві пусті лінійки і т.д., що є порушенням code convention
+
+        // MR: крім того всюди у IF'ах не розставлені дужки, наприклад:
+        //
+        //        (this.Head.X < 0) || 
+        //        (this.Head.Y < 0) ||
+        //        (this.Head.X >= this._gameSettings.GameBoardWidth) ||
+        //        (this.Head.Y >= this._gameSettings.GameBoardHeight)
         #region Private field   
    
         private int _count;        
@@ -155,10 +163,10 @@ namespace SnakeDefender.GameEngine
             // MR: 1) умову варто реалізувати окремим методом
             //     2) крім того кожна одинична умова має починатися з нового рядка, а || має бути вкінці
             //
-            //        this.Head.X < 0 || 
-            //        this.Head.Y < 0 ||
-            //        this.Head.X >= this._gameSettings.GameBoardWidth ||
-            //        this.Head.Y >= this._gameSettings.GameBoardHeight
+            //        (this.Head.X < 0) || 
+            //        (this.Head.Y < 0) ||
+            //        (this.Head.X >= this._gameSettings.GameBoardWidth) ||
+            //        (this.Head.Y >= this._gameSettings.GameBoardHeight)
             if (this.Head.X < 0 || this.Head.Y < 0 
                 || this.Head.X >= this._gameSettings.GameBoardWidth 
                 || this.Head.Y >= this._gameSettings.GameBoardHeight)
@@ -212,6 +220,7 @@ namespace SnakeDefender.GameEngine
             }
             else
             {
+                // MR: хард код
                 this._gameSettings.GameScore += 0.2;
             }
             // MR: думаю для всіх захардкоджених значеннь (25, 45 і 50) варто було зробити змінні в GameSettings
