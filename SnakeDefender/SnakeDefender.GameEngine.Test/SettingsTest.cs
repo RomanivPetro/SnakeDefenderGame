@@ -33,6 +33,8 @@ namespace SnakeDefender.GameEngine.Test
         }
     }
 
+    // MR: класи SetTest та RandomTest потрібно було винести в окремі файли
+    //     крім того можна було зробити конструктори для простоішої ініціалізації об'єктів
     public class SetTest : IGameSettings
     {
         public int GameBoardWidth { get; set; }
