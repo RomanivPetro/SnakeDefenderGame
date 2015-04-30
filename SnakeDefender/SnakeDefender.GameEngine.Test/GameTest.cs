@@ -689,6 +689,7 @@ namespace SnakeDefender.GameEngine.Test
             
         }
 
+        // MR: правильна назва testEat_AddSpeed
         [TestMethod]
         public void TestEat_Addspeed()
         {
