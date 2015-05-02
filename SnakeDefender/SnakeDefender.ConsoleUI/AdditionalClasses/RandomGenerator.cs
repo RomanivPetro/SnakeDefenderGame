@@ -3,6 +3,9 @@ using SnakeDefender.GameEngine.GameObject;
 
 namespace SnakeDefender.ConsoleUI.AdditionalClasses
 {
+    /*
+     * Review GY: рекомендую перенести даний клас до SnakeDefender.GameEngine.
+     */
     public class RandomGenerator : IRandomGenerator
     {
         #region Private fields
@@ -25,8 +28,7 @@ namespace SnakeDefender.ConsoleUI.AdditionalClasses
         public Point Generate()
         {           
             var rnd = new Random();
-            var genPoint = new Point(rnd.Next(0, this._boardWidth),
-                rnd.Next(0, this._boardHeight));
+            var genPoint = new Point(rnd.Next(0, this._boardWidth), rnd.Next(0, this._boardHeight));
             return genPoint;
         }
 

@@ -36,6 +36,9 @@ namespace SnakeDefender.GameEngine
 
         #region Public Properties
 
+        /*
+         *Review GY: було б логічно перенести властивості  Head та Tail до класу Snake.
+         */
         public Point Head { get; private set; }
         public Point Tail { get; private set; }    
         public Point Food { get; private set; }                        

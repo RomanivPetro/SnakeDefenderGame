@@ -4,9 +4,17 @@ using System.IO;
 
 namespace SnakeDefender.ConsoleUI.AdditionalClasses
 {
+    /*
+     * Review GY: рекомендую перенести даний клас до SnakeDefender.GameEngine.
+     * Зчитування імені користувача та відображення рузультату на консоль необхідно винести за межі класу.
+     */
     public class ResultsProcessing
     {
         #region Public Property
+
+        /*
+         * Review GY: чому властивість Results є публічною, якщо вона використовується лише в межах класу
+         */
         public ResultsHolder[] Results { get; set; }
 
         #endregion
@@ -32,6 +40,9 @@ namespace SnakeDefender.ConsoleUI.AdditionalClasses
             }
             else
             {
+                /*
+                 * Review GY: дубляж коду.
+                 */
                 Console.WriteLine("Write your name: ");
                 string name = Console.ReadLine();
                 Serialization(AddScore(point, name));
