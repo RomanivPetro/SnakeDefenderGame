@@ -7,6 +7,10 @@ using GameStatus = SnakeDefender.GameEngine.GameStatus;
 
 namespace SnakeDefender.ConsoleUI
 {
+    /*
+     * Review GY: рекомендую винести за межі класу _gameSettings, _randomGenerator, _game
+     * та лишити тут лише логіку по відображенню. Всі необхідні дані методи можуть отримати в якості параметрів.
+     */
     class ConsoleGame
     {
         #region Private fields
@@ -14,7 +18,13 @@ namespace SnakeDefender.ConsoleUI
         private SettingsReader _gameSettings;
         private RandomGenerator _randomGenerator;
         private Game _game;
-        private System.Timers.Timer _gameTimer;        
+        /*
+         * Review GY: повне ім'я типу Timer є надлишковим, оскільки простір імен заявлений вище.
+         */
+        private System.Timers.Timer _gameTimer;
+        /*
+         * Review GY: імена змінних мають бути в режимі кемел кейс.
+         */
         private ConsoleKeyInfo _key_info;
 
         #endregion
@@ -44,6 +54,9 @@ namespace SnakeDefender.ConsoleUI
         {             
             this._game.Start();           
              DrawField();
+             /*
+              * Review GY: повне ім'я типу Timer є надлишковим, оскільки простір імен заявлений вище.
+              */
             this._gameTimer = new System.Timers.Timer(this._game.Speed);
             this._gameTimer.Elapsed += new ElapsedEventHandler(RunningGame);
             this._gameTimer.Enabled = true;
@@ -84,6 +97,9 @@ namespace SnakeDefender.ConsoleUI
                 switch (this._key_info.Key)
                 {
                     case ConsoleKey.RightArrow:
+                        /*
+                        * Review GY: повне ім'я типу Direction є надлишковим, оскільки простір імен заявлений вище.
+                        */
                         if (this._game.MoveDirection != GameEngine.Direction.Left)
                         {
                             this._game.MoveDirection = GameEngine.Direction.Right;

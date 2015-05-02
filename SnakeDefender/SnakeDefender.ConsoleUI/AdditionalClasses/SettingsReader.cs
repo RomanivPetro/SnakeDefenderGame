@@ -5,6 +5,9 @@ using SnakeDefender.GameEngine.GameObject;
 
 namespace SnakeDefender.ConsoleUI.AdditionalClasses
 {
+    /*
+     * Review GY: рекомендую перенести даний клас до SnakeDefender.GameEngine.
+     */
     public class SettingsReader : IGameSettings
     {
         #region Public Property
