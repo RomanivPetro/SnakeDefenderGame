@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeDefender.ConsoleUI", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeDefender.GameEngine.Test", "SnakeDefender.GameEngine.Test\SnakeDefender.GameEngine.Test.csproj", "{62457673-3696-416F-900E-7775C450F83C}"
 	ProjectSection(ProjectDependencies) = postProject
+		{3D16EA73-4394-4461-AB43-75EA06D5D3C9} = {3D16EA73-4394-4461-AB43-75EA06D5D3C9}
 		{B9A434A2-B072-4A00-8330-BEA9FA6B7406} = {B9A434A2-B072-4A00-8330-BEA9FA6B7406}
 	EndProjectSection
 EndProject
@@ -25,6 +26,9 @@ EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SnakeDefender.GameEngine.Modeling", "SnakeDefender.GameEngine.Modeling\SnakeDefender.GameEngine.Modeling.modelproj", "{FFED4251-B56B-45C2-A514-528E70633E19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeDefender.Helpers", "SnakeDefender.Helpers\SnakeDefender.Helpers.csproj", "{3D16EA73-4394-4461-AB43-75EA06D5D3C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B9A434A2-B072-4A00-8330-BEA9FA6B7406} = {B9A434A2-B072-4A00-8330-BEA9FA6B7406}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
