@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9A434A2-B072-4A00-8330-BEA9FA6B7406}</ProjectGuid>
+    <ProjectGuid>{3D16EA73-4394-4461-AB43-75EA06D5D3C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SnakeDefender.GameEngine</RootNamespace>
-    <AssemblyName>SnakeDefender.GameEngine</AssemblyName>
+    <RootNamespace>SnakeDefender.Helpers</RootNamespace>
+    <AssemblyName>SnakeDefender.Helpers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,13 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SnakeDefender.GameEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\SnakeDefender.GameEngine.dll</HintPath>
+    <Reference Include="SnakeDefender.GameEngine">
+      <HintPath>..\SnakeDefender.GameEngine\bin\Debug\SnakeDefender.GameEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -47,16 +41,13 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game.cs" />
-    <Compile Include="GameObject\Enumerations.cs" />
-    <Compile Include="GameObject\IGameSettings.cs" />
-    <Compile Include="GameObject\IRandomGenerator.cs" />
-    <Compile Include="GameObject\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GameObject\Snake.cs" />
+    <Compile Include="RandomGenerator.cs" />
+    <Compile Include="ResultAnalysis.cs" />
+    <Compile Include="ResultsHolder.cs" />
+    <Compile Include="GameSettings.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

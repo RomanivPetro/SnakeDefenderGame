@@ -4,6 +4,7 @@ using SnakeDefender.GameEngine.Test;
 using SnakeDefender.GameEngine;
 using SnakeDefender.GameEngine.GameObject;
 using System.Linq;
+using SnakeDefender.GameEngine.Test.AdditionalsClasses;
 
 namespace SnakeDefender.GameEngine.Test
 {
@@ -12,19 +13,12 @@ namespace SnakeDefender.GameEngine.Test
     {
       
         #region Game Lifecycle
+
         [TestMethod]
         public void TestUsualLifecycle()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,                 
-            };
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7,7));
           
             var game = new Game(settings, generator);
@@ -39,16 +33,8 @@ namespace SnakeDefender.GameEngine.Test
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestStart_WrongStatus_1()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,               
-            };
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -60,16 +46,8 @@ namespace SnakeDefender.GameEngine.Test
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestStart_WrongStatus_2()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -82,16 +60,8 @@ namespace SnakeDefender.GameEngine.Test
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestStop_WrongStatus_1()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,             
-            };
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -102,16 +72,8 @@ namespace SnakeDefender.GameEngine.Test
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestStop_WrongStatus_2()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,                
-            };
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -119,22 +81,16 @@ namespace SnakeDefender.GameEngine.Test
             game.Stop();
             game.Stop();
         }
+
         #endregion
 
         #region Test Property
+
         [TestMethod]
         public void TestGameScoreGetter()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,                
-            };
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();            
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -150,17 +106,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestGameConstructor()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -176,16 +123,8 @@ namespace SnakeDefender.GameEngine.Test
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestMovement_WrongMove()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();          
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -195,17 +134,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMovement_CheckTailRemove()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,                
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);                   
@@ -220,17 +150,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMovement_TurnLeft()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -244,17 +165,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMovement_TurnRight()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -269,17 +181,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMovement_TurnUp()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,             
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -294,17 +197,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMovement_TurnDown()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,           
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -321,17 +215,10 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMoveCheck_CollisionWithTopBorder()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Up,
-            };
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 1, Direction.Up, "Results.xml");
+            var generator = new RandomGeneratorTest();
 
-            var generator = new RandomTest();
+           
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);            
@@ -344,17 +231,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMoveCheck_CollisionWithBottomBorder()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,                
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -371,17 +249,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMoveCheck_CollisionWithLeftBorder()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -397,17 +266,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMoveCheck_CollisionWithRightBorder()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Right,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Right, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -422,17 +282,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMoveCheck_CollisionWithBody()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,         
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);         
@@ -448,17 +299,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestMoveCheck_CollisionWithEmptyField()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,                
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 1, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);           
@@ -488,17 +330,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestGenerateFood_RandomGenerate_Case1()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -510,17 +343,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestGenerateFood_RandomGenerate_Case2()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(7, 7));
 
             var game = new Game(settings, generator);
@@ -533,17 +357,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestGenerateFood_ColissionsWithBody()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(3, 1));
             generator.genPoints.Add(new Point(5,2));
             generator.genPoints.Add(new Point(9, 9));
@@ -560,17 +375,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestGenerateFood_ColissionsWithEmptyField()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 1, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(3, 1));
             generator.genPoints.Add(new Point(5, 5));
             generator.genPoints.Add(new Point(9, 9));
@@ -587,17 +393,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestGenerateFood_ColissionsWithEmptyField_2()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 1, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(3, 1));
             generator.genPoints.Add(new Point(5, 5));
             generator.genPoints.Add(new Point(9, 4));
@@ -617,17 +414,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestEat_EatBigFood()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 0,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,          
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 0, 50, 5, 5, 1, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(3, 1));
             generator.genPoints.Add(new Point(8,8));
             // Food(3,1)
@@ -642,17 +430,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestEat_EatBigFood_2()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 0,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 40, 0, 50, 5, 5, 1, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(3, 1));
             generator.genPoints.Add(new Point(8, 9));
             // Food(3,1)
@@ -669,17 +448,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestEat_EatSimple()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 40,
-                GameScore = 40.5,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,         
-            };
-
-            var generator = new RandomTest();            
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();          
             generator.genPoints.Add(new Point(8, 9));
          
             var game = new Game(settings, generator);
@@ -692,17 +462,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestEat_Addspeed()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 200,
-                GameScore = 50,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,               
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 200, 50, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(8, 9));
 
             var game = new Game(settings, generator);
@@ -714,17 +475,8 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestEat_MaxSpeed()
         {
-            var settings = new SetTest
-            {
-                GameBoardWidth = 10,
-                GameBoardHeight = 30,
-                GameSpeed = 45,
-                GameScore = 50,
-                GamePoints = 50,
-                GameMoveDirection = Direction.Left,                
-            };
-
-            var generator = new RandomTest();
+            var settings = new GameSettingsTest(10, 30, 45, 200, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var generator = new RandomGeneratorTest();
             generator.genPoints.Add(new Point(8, 9));
 
             var game = new Game(settings, generator);

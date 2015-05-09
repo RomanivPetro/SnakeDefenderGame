@@ -4,29 +4,22 @@ using System.Linq;
 using SnakeDefender.GameEngine.GameObject;
 
 namespace SnakeDefender.GameEngine
-{
-    #region Public Enumerations
-
-    public enum GameStatus
-    {
-        ReadyToStart,
-        InProgress,
-        Completed
-    }
-    public enum Direction
-    {
-        Left,
-        Right,
-        Up,
-        Down
-    }
-
-    #endregion
+{ 
     public class Game
     {
-        #region Private field   
-   
-        private int _count;        
+        #region GameConstants
+
+        private const int Count = 25;
+        private const double Coins = 0.2;
+        private const int SpeedLimit = 50;
+        private const int SpeedUpper = 45;
+
+        #endregion
+
+        #region Private field
+
+        private int _counter;               
+        private Point _point;
         private List<Point> _emptyField;
         private Snake _playerSnake;
         private IGameSettings _gameSettings;
@@ -36,8 +29,14 @@ namespace SnakeDefender.GameEngine
 
         #region Public Properties
 
-        public Point Head { get; private set; }
-        public Point Tail { get; private set; }    
+        public Point Head
+        {
+            get { return this._playerSnake.Head; }
+        }
+        public Point Tail
+        {
+            get { return this._playerSnake.Tail; }
+        }    
         public Point Food { get; private set; }                        
         public int Speed { get { return _gameSettings.GameSpeed; } }
         public double Score { get { return _gameSettings.GameScore; } }
@@ -62,11 +61,11 @@ namespace SnakeDefender.GameEngine
         {       
             this._gameSettings = gameSettings;
             this._randomGenerator = randomGenerator;
-            this._playerSnake = new Snake();
+            this._playerSnake = new Snake(gameSettings);
             this.Status = GameStatus.ReadyToStart;
-            this._emptyField = new List<Point>();
-            this.Head = _playerSnake.Body[0];
-            this._count = 25;         
+            this._emptyField = new List<Point>();                   
+            this._point = this._playerSnake.Head;
+            this._counter = 25;
         }
 
         #endregion
@@ -111,29 +110,26 @@ namespace SnakeDefender.GameEngine
 
             #endregion
 
-            this._emptyField.Add(this._playerSnake.Body[_playerSnake.Body.Count - 1]);
-            Tail = this._playerSnake.Body[this._playerSnake.Body.Count - 1];
-            
-            this._playerSnake.Body.RemoveAt(this._playerSnake.Body.Count - 1);
-            
+            this._emptyField.Add(this._playerSnake.RemoveTail());
+           
             if (this._gameSettings.GameMoveDirection == Direction.Left)
             {
-                this.Head = new Point(this.Head.X - 1, this.Head.Y);
+                this._point = new Point(this._point.X - 1, this._point.Y);
             }
-            if (this._gameSettings.GameMoveDirection == Direction.Right)
+            else if (this._gameSettings.GameMoveDirection == Direction.Right)
             {
-                this.Head = new Point(this.Head.X + 1, this.Head.Y);
+                this._point = new Point(this._point.X + 1, this._point.Y);
             }
-            if (this._gameSettings.GameMoveDirection == Direction.Up)
+            else if (this._gameSettings.GameMoveDirection == Direction.Up)
             {
-                this.Head = new Point(this.Head.X, this.Head.Y - 1);
+                this._point = new Point(this._point.X, this._point.Y - 1);
             }
-            if (this._gameSettings.GameMoveDirection == Direction.Down)
+            else if (this._gameSettings.GameMoveDirection == Direction.Down)
             {
-                this.Head = new Point(this.Head.X, this.Head.Y + 1);
+                this._point = new Point(this._point.X, this._point.Y + 1);
             }
            
-            this._playerSnake.Body.Insert(0, this.Head);
+            this._playerSnake.AddHead(this._point);
             MoveCheck();
             Eat();
         }                       
@@ -145,71 +141,87 @@ namespace SnakeDefender.GameEngine
         private void MoveCheck()
         {
             // Detect collisions with game's borders
-            if (this.Head.X < 0 || this.Head.Y < 0 
-                || this.Head.X >= this._gameSettings.GameBoardWidth 
-                || this.Head.Y >= this._gameSettings.GameBoardHeight)
-            {
-                Stop();
-            }
-
-            // Detect colissions with Body
-            for (var i = 1; i < this._playerSnake.Body.Count; i++)
-            {
-                if (this.Head.X == this._playerSnake.Body[i].X
-                    && this.Head.Y == this._playerSnake.Body[i].Y)
-                {
-                    Stop();
-                }
-            }
-
+            CheckBordersCollisions();
+            // Detect colisions with Body
+            CheckBodyCollisions();
             // Detect collision with empty field
-            if (this._emptyField.Count(point => this.Head.X == point.X && this.Head.Y == point.Y) != 0)
+            CheckEmptyFieldCollisions();
+        }
+
+        private void CheckEmptyFieldCollisions()
+        {            
+            if (this._emptyField.Count(point => this.Head == point) != 0)
             {
                 Stop();
             }
         }
+
+        private void CheckBodyCollisions()
+        {
+            if (this._playerSnake.CheckingCollisions(this.Head,1))
+            {
+                Stop();
+            }           
+        }
+
+        private void CheckBordersCollisions()
+        {
+            if ((this.Head.X < 0) ||
+                (this.Head.Y < 0) ||
+                (this.Head.X >= this._gameSettings.GameBoardWidth) ||
+                (this.Head.Y >= this._gameSettings.GameBoardHeight))
+            {
+                Stop();
+            }
+        }
+
         private void Eat()
         {
-            if (this.Head.X == this.Food.X && this.Head.Y == this.Food.Y)
+            if (this.Head == this.Food)
             {
-                this._playerSnake.Body.Add(new Point(this._playerSnake.Body[this._playerSnake.Body.Count - 1].X,
-                    this._playerSnake.Body[this._playerSnake.Body.Count - 1].Y));
-
-                // Update Score
-                this._gameSettings.GameScore += this._gameSettings.GamePoints;
-                GenerateFood();
+                EatBigFood();
             }
             else
             {
-                this._gameSettings.GameScore += 0.2;
+                this._gameSettings.GameScore += Coins;
             }
-            if (this._gameSettings.GameScore > this._count)
+            UpdateSpeed();
+        }
+
+        private void UpdateSpeed()
+        {
+            if (this._gameSettings.GameScore > this._counter)
             {
-                this._count += 25;
-                if (this._gameSettings.GameSpeed >= 50)
+                this._counter += Count;
+                if (this._gameSettings.GameSpeed >= SpeedLimit)
                 {
-                    this._gameSettings.GameSpeed -= 45;
+                    this._gameSettings.GameSpeed -= SpeedUpper;
                 }
             }
         }
+
+        private void EatBigFood()
+        {
+            this._playerSnake.AddToBody();
+            // Update Score
+            this._gameSettings.GameScore += this._gameSettings.GamePoints;
+            GenerateFood();
+        }
+
         private void GenerateFood()
         {          
             Point genPoint;
-            while (true)
+            do
             {
                 genPoint = _randomGenerator.Generate();
-                if (_emptyField.Count(point => point.X == genPoint.X && 
-                                              point.Y == genPoint.Y) == 0)
+                if (_emptyField.Count(point => point == genPoint) == 0)
                 {
-                    if (_playerSnake.Body.Count(point => point.X == genPoint.X && 
-                                                        point.Y == genPoint.Y) == 0)
+                    if (!_playerSnake.CheckingCollisions(genPoint, 0))
                     {
                         Food = genPoint;
-                        return;
                     }
                 }
-
-            }
+            } while (Food != genPoint);          
         }  
 
         #endregion

@@ -1,7 +1,7 @@
 ﻿using System;
 using SnakeDefender.GameEngine.GameObject;
 
-namespace SnakeDefender.ConsoleUI.AdditionalClasses
+namespace SnakeDefender.Helpers
 {
     public class RandomGenerator : IRandomGenerator
     {
@@ -13,6 +13,7 @@ namespace SnakeDefender.ConsoleUI.AdditionalClasses
         #endregion
 
         #region Constructor
+
         public RandomGenerator(int boardWidth, int boardHeight)
         {
             this._boardWidth = boardWidth;
@@ -22,8 +23,9 @@ namespace SnakeDefender.ConsoleUI.AdditionalClasses
         #endregion
 
         #region Public Method
+
         public Point Generate()
-        {           
+        {
             var rnd = new Random();
             var genPoint = new Point(rnd.Next(0, this._boardWidth),
                 rnd.Next(0, this._boardHeight));

@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SnakeDefender.GameEngine.GameObject;
+using SnakeDefender.GameEngine.Test.AdditionalsClasses;
 
 namespace SnakeDefender.GameEngine.Test.GameObject
 {
@@ -10,12 +11,10 @@ namespace SnakeDefender.GameEngine.Test.GameObject
         [TestMethod]
         public void TestSnakeCtrWithoutParameters()
         {
-            Snake playerSnake = new Snake();
-            for (int i = 0; i < 5; i++)
-            {
-                Assert.AreEqual(5, playerSnake.Body[i].X);
-                Assert.AreEqual(i+1, playerSnake.Body[i].Y);
-            }
+            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");           
+            Snake playerSnake = new Snake(settings);
+            Assert.AreEqual(settings.SnakePosX, playerSnake.Head.X);
+            Assert.AreEqual(settings.SnakePosY, playerSnake.Head.Y);
         }
         
     }

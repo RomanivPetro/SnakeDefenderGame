@@ -1,36 +1,66 @@
 ﻿using System;
-using SnakeDefender.ConsoleUI.AdditionalClasses;
-using SnakeDefender.GameEngine;
+using SnakeDefender.Helpers;
 
 namespace SnakeDefender.ConsoleUI
 {
     class GameStart
-    {            
+    {
+        #region Private Fields
+
+        private static GameSettings _gameSettings;
+        private static ResultAnalysis _resultsAnalysis;
+        private static RandomGenerator _randomGenerator;
+
+        #endregion
+
         static void Main(string[] args)
         {
-            var resultsAnalysis = new ResultsProcessing();
-
             Console.WriteLine("Snake Defender");
             Console.WriteLine("Press 'Enter' for start");
-            ConsoleKeyInfo key_info = Console.ReadKey();
+            ConsoleKeyInfo keyInfo = Console.ReadKey();
            
-            if (key_info.Key == ConsoleKey.Enter)
+            if (keyInfo.Key == ConsoleKey.Enter)
             {
-                while (key_info.Key == ConsoleKey.Enter)
-                {
-                    var game = new ConsoleGame();
+                do
+                {                   
+                    var game = new ConsoleGame(_gameSettings, _randomGenerator);
+                    _resultsAnalysis.RaiseMyEvent += game.ShowResults;
                     game.StartGame();
                     // when Game Over
-                    Console.WriteLine("Your score --> {0}",game.Score);
-                    resultsAnalysis.CheckResult(game.Score);
-                    resultsAnalysis.ShowResults();
+                    GameCompleted(game);
                     Console.WriteLine("Press 'Enter' for restart");
-                    key_info = Console.ReadKey();                    
+                    keyInfo = Console.ReadKey();
                     Console.Clear();
-                }
 
+                } while (keyInfo.Key == ConsoleKey.Enter);
+                
             }
             
         }
+
+        private static void GameCompleted(ConsoleGame game)
+        {
+            Console.SetCursorPosition(0, _gameSettings.GameBoardHeight + 3);
+            Console.WriteLine("Your score --> {0}", game.Score);
+            if (_resultsAnalysis.CheckResult(game.Score))
+            {
+                Console.WriteLine("Your name:");
+                string name = Console.ReadLine();
+                _resultsAnalysis.AddScore(game.Score, name);
+            }           
+            _resultsAnalysis.ShowResults();
+            _gameSettings.ReadFromConfig();
+            _resultsAnalysis = new ResultAnalysis(_gameSettings);
+        }
+
+        static GameStart()
+        {
+            _gameSettings = new GameSettings();
+            _gameSettings.ReadFromConfig();
+            _resultsAnalysis = new ResultAnalysis(_gameSettings);
+            _randomGenerator = new RandomGenerator(_gameSettings.GameBoardWidth,
+            _gameSettings.GameBoardHeight);
+        }
+
     }
 }
