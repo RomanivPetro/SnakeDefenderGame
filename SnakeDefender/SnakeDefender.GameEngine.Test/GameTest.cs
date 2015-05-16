@@ -448,14 +448,14 @@ namespace SnakeDefender.GameEngine.Test
         [TestMethod]
         public void TestEat_EatSimple()
         {
-            var settings = new GameSettingsTest(10, 30, 40, 40.5, 50, 5, 5, 5, Direction.Left, "Results.xml");
+            var settings = new GameSettingsTest(10, 30, 40, 0, 50, 5, 5, 5, Direction.Left, "Results.xml");
             var generator = new RandomGeneratorTest();          
             generator.genPoints.Add(new Point(8, 9));
          
             var game = new Game(settings, generator);
             game.Start();
             game.Move();
-            Assert.AreEqual(40.7, game.Score);
+            Assert.AreEqual(0.2, game.Score);
             
         }
 

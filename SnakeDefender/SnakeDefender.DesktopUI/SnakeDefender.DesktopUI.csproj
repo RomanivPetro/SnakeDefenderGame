@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SnakeDefender.GameEngine">
+      <HintPath>..\SnakeDefender.GameEngine\bin\Debug\SnakeDefender.GameEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SnakeDefender.Helpers">
+      <HintPath>..\SnakeDefender.Helpers\bin\Debug\SnakeDefender.Helpers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +50,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\GameCompletedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GameCompletedControl.Designer.cs">
+      <DependentUpon>GameCompletedControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuControl.Designer.cs">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameplayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GameplayControl.Designer.cs">
+      <DependentUpon>GameplayControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ResultsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ResultsControl.Designer.cs">
+      <DependentUpon>ResultsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RulesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RulesControl.Designer.cs">
+      <DependentUpon>RulesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +89,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\GameCompletedControl.resx">
+      <DependentUpon>GameCompletedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuControl.resx">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GameplayControl.resx">
+      <DependentUpon>GameplayControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResultsControl.resx">
+      <DependentUpon>ResultsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RulesControl.resx">
+      <DependentUpon>RulesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -60,6 +115,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -73,6 +129,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hisgh_scores_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hisgh_scores_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_play_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_play_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Score_title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retry1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecordTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retry2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

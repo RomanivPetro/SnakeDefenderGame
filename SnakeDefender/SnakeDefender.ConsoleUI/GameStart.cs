@@ -48,8 +48,7 @@ namespace SnakeDefender.ConsoleUI
                 string name = Console.ReadLine();
                 _resultsAnalysis.AddScore(game.Score, name);
             }           
-            _resultsAnalysis.ShowResults();
-            _gameSettings.ReadFromConfig();
+            _resultsAnalysis.ShowResults();           
             _resultsAnalysis = new ResultAnalysis(_gameSettings);
         }
 

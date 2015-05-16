@@ -38,20 +38,10 @@ namespace SnakeDefender.GameEngine
             get { return this._playerSnake.Tail; }
         }    
         public Point Food { get; private set; }                        
-        public int Speed { get { return _gameSettings.GameSpeed; } }
-        public double Score { get { return _gameSettings.GameScore; } }
+        public int Speed { get; private set; }
+        public double Score { get; private set; }
         public GameStatus Status { get; private set; }
-        public Direction MoveDirection
-        {
-            get
-            {
-                return this._gameSettings.GameMoveDirection;
-            }
-            set
-            {
-                this._gameSettings.GameMoveDirection = value;
-            }
-        }
+        public Direction MoveDirection { get; set; }     
         
         #endregion
 
@@ -63,6 +53,9 @@ namespace SnakeDefender.GameEngine
             this._randomGenerator = randomGenerator;
             this._playerSnake = new Snake(gameSettings);
             this.Status = GameStatus.ReadyToStart;
+            this.Score = gameSettings.GameScore;
+            this.Speed = gameSettings.GameSpeed;
+            this.MoveDirection = gameSettings.GameMoveDirection;
             this._emptyField = new List<Point>();                   
             this._point = this._playerSnake.Head;
             this._counter = 25;
@@ -112,19 +105,19 @@ namespace SnakeDefender.GameEngine
 
             this._emptyField.Add(this._playerSnake.RemoveTail());
            
-            if (this._gameSettings.GameMoveDirection == Direction.Left)
+            if (this.MoveDirection == Direction.Left)
             {
                 this._point = new Point(this._point.X - 1, this._point.Y);
             }
-            else if (this._gameSettings.GameMoveDirection == Direction.Right)
+            else if (this.MoveDirection == Direction.Right)
             {
                 this._point = new Point(this._point.X + 1, this._point.Y);
             }
-            else if (this._gameSettings.GameMoveDirection == Direction.Up)
+            else if (this.MoveDirection == Direction.Up)
             {
                 this._point = new Point(this._point.X, this._point.Y - 1);
             }
-            else if (this._gameSettings.GameMoveDirection == Direction.Down)
+            else if (this.MoveDirection == Direction.Down)
             {
                 this._point = new Point(this._point.X, this._point.Y + 1);
             }
@@ -183,19 +176,19 @@ namespace SnakeDefender.GameEngine
             }
             else
             {
-                this._gameSettings.GameScore += Coins;
+                this.Score += Coins;
             }
             UpdateSpeed();
         }
 
         private void UpdateSpeed()
         {
-            if (this._gameSettings.GameScore > this._counter)
+            if (this.Score > this._counter)
             {
                 this._counter += Count;
-                if (this._gameSettings.GameSpeed >= SpeedLimit)
+                if (this.Speed >= SpeedLimit)
                 {
-                    this._gameSettings.GameSpeed -= SpeedUpper;
+                    this.Speed -= SpeedUpper;
                 }
             }
         }
@@ -204,7 +197,7 @@ namespace SnakeDefender.GameEngine
         {
             this._playerSnake.AddToBody();
             // Update Score
-            this._gameSettings.GameScore += this._gameSettings.GamePoints;
+            this.Score += this._gameSettings.GamePoints;
             GenerateFood();
         }
 
