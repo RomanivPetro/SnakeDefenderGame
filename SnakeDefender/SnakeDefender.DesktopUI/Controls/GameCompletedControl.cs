@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using SnakeDefender.GameEngine.GameObject;
 using SnakeDefender.Helpers;
 
 namespace SnakeDefender.DesktopUI.Controls
@@ -26,6 +18,7 @@ namespace SnakeDefender.DesktopUI.Controls
 
         private void GameCompletedControl_Load(object sender, EventArgs e)
         {
+            this.Dock = DockStyle.Fill;
             CheckResult(_result);
             lblScore.Text = _result.ToString();
         }
@@ -73,8 +66,8 @@ namespace SnakeDefender.DesktopUI.Controls
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            this._parentForm.Controls.Clear();
-            this._parentForm.Controls.Add(new MenuControl(_parentForm));           
+            this._parentForm.Controls.Clear();           
+            this._parentForm.Controls.Add(new MenuControl(_parentForm));       
         }
     }
 }

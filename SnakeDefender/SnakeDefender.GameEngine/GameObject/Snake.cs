@@ -10,6 +10,11 @@ namespace SnakeDefender.GameEngine.GameObject
 
         #endregion
 
+        public List<Point> Body
+        {
+            get { return this._body; }
+        }
+
         #region Public Properties
 
         public Point Head

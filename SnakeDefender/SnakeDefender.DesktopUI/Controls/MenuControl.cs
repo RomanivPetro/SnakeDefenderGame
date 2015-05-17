@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using SnakeDefender.GameEngine.GameObject;
 
 namespace SnakeDefender.DesktopUI.Controls
 {
@@ -74,7 +66,7 @@ namespace SnakeDefender.DesktopUI.Controls
 
         private void instruct_but_Click(object sender, EventArgs e)
         {
-            ChangeControl(new RulesControl());         
+            ChangeControl(new RulesControl(_parentForm));         
         }
 
         private void results_but_Click(object sender, EventArgs e)
@@ -88,6 +80,11 @@ namespace SnakeDefender.DesktopUI.Controls
         {
             _parentForm.Controls.Clear();
             _parentForm.Controls.Add((control));            
+        }
+
+        private void MenuControl_Load(object sender, EventArgs e)
+        {
+            this.Dock = DockStyle.Fill;
         }
     }
 }

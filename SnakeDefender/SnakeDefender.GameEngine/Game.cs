@@ -19,8 +19,7 @@ namespace SnakeDefender.GameEngine
         #region Private field
 
         private int _counter;               
-        private Point _point;
-        private List<Point> _emptyField;
+        private Point _point;       
         private Snake _playerSnake;
         private IGameSettings _gameSettings;
         private IRandomGenerator _randomGenerator;
@@ -36,7 +35,12 @@ namespace SnakeDefender.GameEngine
         public Point Tail
         {
             get { return this._playerSnake.Tail; }
-        }    
+        }
+        public List<Point> Body
+        {
+            get { return this._playerSnake.Body; }
+        }
+        public List<Point> EmptyField { get; private set; }
         public Point Food { get; private set; }                        
         public int Speed { get; private set; }
         public double Score { get; private set; }
@@ -56,9 +60,9 @@ namespace SnakeDefender.GameEngine
             this.Score = gameSettings.GameScore;
             this.Speed = gameSettings.GameSpeed;
             this.MoveDirection = gameSettings.GameMoveDirection;
-            this._emptyField = new List<Point>();                   
+            this.EmptyField = new List<Point>();                   
             this._point = this._playerSnake.Head;
-            this._counter = 25;
+            this._counter = Count;
         }
 
         #endregion
@@ -103,7 +107,7 @@ namespace SnakeDefender.GameEngine
 
             #endregion
 
-            this._emptyField.Add(this._playerSnake.RemoveTail());
+            this.EmptyField.Add(this._playerSnake.RemoveTail());
            
             if (this.MoveDirection == Direction.Left)
             {
@@ -143,7 +147,7 @@ namespace SnakeDefender.GameEngine
 
         private void CheckEmptyFieldCollisions()
         {            
-            if (this._emptyField.Count(point => this.Head == point) != 0)
+            if (this.EmptyField.Count(point => this.Head == point) != 0)
             {
                 Stop();
             }
@@ -207,7 +211,7 @@ namespace SnakeDefender.GameEngine
             do
             {
                 genPoint = _randomGenerator.Generate();
-                if (_emptyField.Count(point => point == genPoint) == 0)
+                if (EmptyField.Count(point => point == genPoint) == 0)
                 {
                     if (!_playerSnake.CheckingCollisions(genPoint, 0))
                     {

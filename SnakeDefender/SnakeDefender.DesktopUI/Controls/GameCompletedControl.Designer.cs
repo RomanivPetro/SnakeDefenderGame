@@ -50,10 +50,11 @@ namespace SnakeDefender.DesktopUI.Controls
             // 
             // lblScore
             // 
+            this.lblScore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblScore.AutoSize = true;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblScore.ForeColor = System.Drawing.Color.Lime;
-            this.lblScore.Location = new System.Drawing.Point(232, 162);
+            this.lblScore.Location = new System.Drawing.Point(130, 130);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(55, 39);
             this.lblScore.TabIndex = 1;
@@ -61,13 +62,14 @@ namespace SnakeDefender.DesktopUI.Controls
             // 
             // pnlRecord
             // 
+            this.pnlRecord.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlRecord.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pnlRecord.Controls.Add(this.pictureBox1);
             this.pnlRecord.Controls.Add(this.btnOk);
             this.pnlRecord.Controls.Add(this.tbName);
-            this.pnlRecord.Location = new System.Drawing.Point(118, 223);
+            this.pnlRecord.Location = new System.Drawing.Point(20, 191);
             this.pnlRecord.Name = "pnlRecord";
-            this.pnlRecord.Size = new System.Drawing.Size(293, 152);
+            this.pnlRecord.Size = new System.Drawing.Size(290, 152);
             this.pnlRecord.TabIndex = 6;
             this.pnlRecord.Visible = false;
             // 
@@ -83,7 +85,7 @@ namespace SnakeDefender.DesktopUI.Controls
             // btnOk
             // 
             this.btnOk.BackColor = System.Drawing.Color.Lime;
-            this.btnOk.Location = new System.Drawing.Point(106, 117);
+            this.btnOk.Location = new System.Drawing.Point(107, 117);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 1;
@@ -93,15 +95,16 @@ namespace SnakeDefender.DesktopUI.Controls
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(91, 91);
+            this.tbName.Location = new System.Drawing.Point(92, 91);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(105, 20);
             this.tbName.TabIndex = 0;
             // 
             // btnMenu
             // 
+            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnMenu.Image = global::SnakeDefender.DesktopUI.Properties.Resources.Menu1;
-            this.btnMenu.Location = new System.Drawing.Point(214, 444);
+            this.btnMenu.Location = new System.Drawing.Point(114, 412);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(90, 43);
             this.btnMenu.TabIndex = 5;
@@ -112,8 +115,9 @@ namespace SnakeDefender.DesktopUI.Controls
             // 
             // btnRetry
             // 
+            this.btnRetry.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRetry.Image = global::SnakeDefender.DesktopUI.Properties.Resources.Retry1;
-            this.btnRetry.Location = new System.Drawing.Point(214, 392);
+            this.btnRetry.Location = new System.Drawing.Point(110, 360);
             this.btnRetry.Name = "btnRetry";
             this.btnRetry.Size = new System.Drawing.Size(100, 37);
             this.btnRetry.TabIndex = 4;
@@ -124,8 +128,9 @@ namespace SnakeDefender.DesktopUI.Controls
             // 
             // imgScore
             // 
+            this.imgScore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgScore.Image = global::SnakeDefender.DesktopUI.Properties.Resources.Score_title;
-            this.imgScore.Location = new System.Drawing.Point(150, 96);
+            this.imgScore.Location = new System.Drawing.Point(50, 64);
             this.imgScore.Name = "imgScore";
             this.imgScore.Size = new System.Drawing.Size(229, 50);
             this.imgScore.TabIndex = 3;
@@ -133,8 +138,9 @@ namespace SnakeDefender.DesktopUI.Controls
             // 
             // imgGameOver
             // 
+            this.imgGameOver.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgGameOver.Image = global::SnakeDefender.DesktopUI.Properties.Resources.Game_over;
-            this.imgGameOver.Location = new System.Drawing.Point(118, 40);
+            this.imgGameOver.Location = new System.Drawing.Point(20, 8);
             this.imgGameOver.Name = "imgGameOver";
             this.imgGameOver.Size = new System.Drawing.Size(290, 50);
             this.imgGameOver.TabIndex = 2;
@@ -151,7 +157,7 @@ namespace SnakeDefender.DesktopUI.Controls
             this.Controls.Add(this.imgGameOver);
             this.Controls.Add(this.lblScore);
             this.Name = "GameCompletedControl";
-            this.Size = new System.Drawing.Size(550, 550);
+            this.Size = new System.Drawing.Size(335, 487);
             this.Load += new System.EventHandler(this.GameCompletedControl_Load);
             this.pnlRecord.ResumeLayout(false);
             this.pnlRecord.PerformLayout();

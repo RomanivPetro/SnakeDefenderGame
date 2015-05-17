@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SnakeDefender.Helpers;
 
@@ -22,14 +16,21 @@ namespace SnakeDefender.DesktopUI.Controls
             InitializeComponent();
             _parentForm = parentForm;
             _lwTable = new ListView();
-            _counter = 0;
+            _counter = 0;           
+        }
+
+        private void ResultsControl_Load(object sender, EventArgs e)
+        {
+            this.Dock = DockStyle.Fill;
             ShowBestResults();
         }
 
         private void InitListView()
         {          
             _lwTable.Bounds = new Rectangle(new Point(120, 150), new Size(300, 200));
+            _lwTable.BackColor = Color.LawnGreen;
             _lwTable.LabelEdit = false;
+            _lwTable.Anchor = AnchorStyles.None;
             _lwTable.AllowColumnReorder = false;                      
             _lwTable.View = View.Details;
             _lwTable.GridLines = true;
@@ -70,5 +71,7 @@ namespace SnakeDefender.DesktopUI.Controls
             this._parentForm.Controls.Clear();
             this._parentForm.Controls.Add(new MenuControl(_parentForm));    
         }
+
+       
     }
 }

@@ -155,9 +155,6 @@
     <None Include="Resources\play_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\snake.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Game_over.png" />
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +177,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Retry2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopScores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenapple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackfruit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redApple.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
