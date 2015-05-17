@@ -39,7 +39,7 @@ namespace SnakeDefender.DesktopUI
         public void ShowMenuControl()
         {           
             var menuControl = new MenuControl(this);            
-            this.Controls.Add(menuControl);          
+            this.Controls.Add(menuControl);            
         }
            
     }
