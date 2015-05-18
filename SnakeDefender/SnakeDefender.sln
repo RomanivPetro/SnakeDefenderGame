@@ -30,7 +30,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeDefender.Helpers", "Sn
 		{B9A434A2-B072-4A00-8330-BEA9FA6B7406} = {B9A434A2-B072-4A00-8330-BEA9FA6B7406}
 	EndProjectSection
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SnakeDefender.InstallingPackage", "SnakeDefender.InstallingPackage\SnakeDefender.InstallingPackage.vdproj", "{3538D20F-3ED9-41B3-92C9-1602C16ABDFA}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SnakeDefender.InstallationPackage", "SnakeDefender.InstallationPackage\SnakeDefender.InstallationPackage.vdproj", "{4072CCCF-EEFC-4D99-B845-9B7E8BFD66EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -102,12 +102,12 @@ Global
 		{3D16EA73-4394-4461-AB43-75EA06D5D3C9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{3D16EA73-4394-4461-AB43-75EA06D5D3C9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{3D16EA73-4394-4461-AB43-75EA06D5D3C9}.Release|x86.ActiveCfg = Release|Any CPU
-		{3538D20F-3ED9-41B3-92C9-1602C16ABDFA}.Debug|Any CPU.ActiveCfg = Debug
-		{3538D20F-3ED9-41B3-92C9-1602C16ABDFA}.Debug|Mixed Platforms.ActiveCfg = Release
-		{3538D20F-3ED9-41B3-92C9-1602C16ABDFA}.Debug|x86.ActiveCfg = Debug
-		{3538D20F-3ED9-41B3-92C9-1602C16ABDFA}.Release|Any CPU.ActiveCfg = Release
-		{3538D20F-3ED9-41B3-92C9-1602C16ABDFA}.Release|Mixed Platforms.ActiveCfg = Release
-		{3538D20F-3ED9-41B3-92C9-1602C16ABDFA}.Release|x86.ActiveCfg = Release
+		{4072CCCF-EEFC-4D99-B845-9B7E8BFD66EE}.Debug|Any CPU.ActiveCfg = Debug
+		{4072CCCF-EEFC-4D99-B845-9B7E8BFD66EE}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{4072CCCF-EEFC-4D99-B845-9B7E8BFD66EE}.Debug|x86.ActiveCfg = Debug
+		{4072CCCF-EEFC-4D99-B845-9B7E8BFD66EE}.Release|Any CPU.ActiveCfg = Release
+		{4072CCCF-EEFC-4D99-B845-9B7E8BFD66EE}.Release|Mixed Platforms.ActiveCfg = Release
+		{4072CCCF-EEFC-4D99-B845-9B7E8BFD66EE}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

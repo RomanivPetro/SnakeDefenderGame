@@ -13,6 +13,7 @@ namespace SnakeDefender.Helpers
 
         private ResultsHolder[] _resultsHolders;
         private readonly string _resultsPath;
+        private readonly string _resultsFolder;
 
         #endregion
 
@@ -23,7 +24,8 @@ namespace SnakeDefender.Helpers
         public ResultAnalysis(IGameSettings settings)
         {
             _resultsHolders = new ResultsHolder[10];
-            this._resultsPath = settings.ResultPath;
+            this._resultsFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "SnakeDefender");
+            this._resultsPath = Path.Combine(this._resultsFolder, settings.ResultPath);
         }
 
         #endregion
@@ -81,11 +83,17 @@ namespace SnakeDefender.Helpers
         private void Serialization(ResultsHolder[] results)
         {
             var xmlForamt = new XmlSerializer(typeof (ResultsHolder[]));
-            using (var fstream = new FileStream(this._resultsPath,
-                 FileMode.Create, FileAccess.Write, FileShare.None))
+            if (!Directory.Exists(this._resultsFolder))
             {
-                xmlForamt.Serialize(fstream, results);
-            }                     
+                Directory.CreateDirectory(this._resultsFolder);
+            }
+            
+            using (var fstream = new FileStream(this._resultsPath,
+                FileMode.Create, FileAccess.Write, FileShare.None))
+                {
+                    xmlForamt.Serialize(fstream, results);
+                }
+            
         }
 
         private ResultsHolder[] Deserialization()
