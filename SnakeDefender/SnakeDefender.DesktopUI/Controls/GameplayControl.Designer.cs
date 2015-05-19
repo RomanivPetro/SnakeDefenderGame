@@ -59,7 +59,7 @@ namespace SnakeDefender.DesktopUI.Controls
             this.lblScore.BackColor = System.Drawing.Color.White;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.lblScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblScore.Location = new System.Drawing.Point(625, 15);
+            this.lblScore.Location = new System.Drawing.Point(615, 15);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(47, 46);
             this.lblScore.TabIndex = 1;
